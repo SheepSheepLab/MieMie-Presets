@@ -1,0 +1,892 @@
+[
+    {
+        "id": "31d4b115-7d56-4e46-b77a-49a1dabce4e6",
+        "scriptName": "🐑",
+        "findRegex": "",
+        "replaceString": "",
+        "trimStrings": [],
+        "placement": [
+            2
+        ],
+        "disabled": true,
+        "markdownOnly": true,
+        "promptOnly": false,
+        "runOnEdit": false,
+        "substituteRegex": 0,
+        "minDepth": null,
+        "maxDepth": null
+    },
+    {
+        "id": "d0d93b00-5a90-45de-bd70-8c8a0ca3dbfb",
+        "scriptName": "1️⃣",
+        "findRegex": "",
+        "replaceString": "",
+        "trimStrings": [],
+        "placement": [
+            2
+        ],
+        "disabled": true,
+        "markdownOnly": true,
+        "promptOnly": false,
+        "runOnEdit": false,
+        "substituteRegex": 0,
+        "minDepth": null,
+        "maxDepth": null
+    },
+    {
+        "id": "e388bc42-f78d-4e23-be7b-104a2fd4cf8e",
+        "scriptName": "用户输入包裹-默认(多选一)",
+        "findRegex": "/^([\\s\\S]+)$/",
+        "replaceString": "'<user>/玩家'跟屏幕外的我是不一样的。\n'<user>/玩家'只是故事中的NPC。\n'<user>'言行被NPC打断或无视都是非常正常的，这不属于对用户的不礼貌。\n本回合不用在意屏幕外的我，你只需要继续创作出优秀的故事、以及足够真实的不围绕'<user>'的世界！\n那么……\n本回合我想让'<user>'采取的行动是：\n$1",
+        "trimStrings": [],
+        "placement": [
+            1
+        ],
+        "disabled": true,
+        "markdownOnly": false,
+        "promptOnly": true,
+        "runOnEdit": false,
+        "substituteRegex": 1,
+        "minDepth": null,
+        "maxDepth": 2
+    },
+    {
+        "id": "b8a2625c-ddb5-476e-83db-4fb6d3c8bd8d",
+        "scriptName": "用户输入包裹-去媚(多选一)",
+        "findRegex": "/^([\\s\\S]+)$/",
+        "replaceString": "'<user>/玩家'跟屏幕外的我是不一样的。\n'<user>/玩家'只是故事中的NPC。\n'<user>'言行被NPC打断或无视都是非常正常的，这不属于对用户的不礼貌。\n本回合不用在意屏幕外的我，你只需要继续创作出优秀的故事、以及足够真实的不围绕'<user>'的世界！\n那么……\n本回合我想让'<user>'采取的行动是：\n$1\n\n只要你能做到不把'<user>'当主角，而是当做用来讲故事的工具，类似摄像头的感觉，我就满意啦～\n故事唯一的通关方式就是'<user>'死亡，这是我创作该互动的初衷，一个足够真实与沉浸的、'<user>'不注意就会死亡导致故事通关的互动式对话。",
+        "trimStrings": [],
+        "placement": [
+            1
+        ],
+        "disabled": true,
+        "markdownOnly": false,
+        "promptOnly": true,
+        "runOnEdit": false,
+        "substituteRegex": 1,
+        "minDepth": null,
+        "maxDepth": 2
+    },
+    {
+        "id": "3002f6f2-4402-4bff-970e-61f893b81e6f",
+        "scriptName": "⬇️",
+        "findRegex": "",
+        "replaceString": "",
+        "trimStrings": [],
+        "placement": [
+            2
+        ],
+        "disabled": true,
+        "markdownOnly": true,
+        "promptOnly": false,
+        "runOnEdit": false,
+        "substituteRegex": 0,
+        "minDepth": null,
+        "maxDepth": null
+    },
+    {
+        "id": "5b2ac926-bf74-4472-a8ae-44c408033aa8",
+        "scriptName": "display清空AI历史记录仅保留总结",
+        "findRegex": "^[\\s\\S]*?(<memory_log>[\\s\\S]*?<\\/memory_log>)[\\s\\S]*$",
+        "replaceString": "$1",
+        "trimStrings": [],
+        "placement": [
+            2
+        ],
+        "disabled": false,
+        "markdownOnly": true,
+        "promptOnly": false,
+        "runOnEdit": false,
+        "substituteRegex": 1,
+        "minDepth": 5,
+        "maxDepth": null
+    },
+    {
+        "id": "542b407e-d1cd-4d24-a1fc-8771b1d744e7",
+        "scriptName": "send清空AI历史记录仅保留总结",
+        "findRegex": "^[\\s\\S]*?<memory_log>([\\s\\S]*?)<\\/memory_log>[\\s\\S]*$",
+        "replaceString": "$1",
+        "trimStrings": [],
+        "placement": [
+            2
+        ],
+        "disabled": false,
+        "markdownOnly": false,
+        "promptOnly": true,
+        "runOnEdit": false,
+        "substituteRegex": 1,
+        "minDepth": 2,
+        "maxDepth": null
+    },
+    {
+        "id": "47f9793e-303d-4084-9fb2-b10cd1f25134",
+        "scriptName": "2️⃣",
+        "findRegex": "",
+        "replaceString": "",
+        "trimStrings": [],
+        "placement": [
+            2
+        ],
+        "disabled": true,
+        "markdownOnly": true,
+        "promptOnly": false,
+        "runOnEdit": false,
+        "substituteRegex": 0,
+        "minDepth": null,
+        "maxDepth": null
+    },
+    {
+        "id": "5a799c8b-3f23-4bb1-a796-4b64699d8769",
+        "scriptName": "语调美化",
+        "findRegex": "/((?:&(?:[A-Za-z][A-Za-z0-9]+|#[0-9]+|#[xX][0-9A-Fa-f]+);|\\uD83C[\\uDDE6-\\uDDFF]\\uD83C[\\uDDE6-\\uDDFF]|(?!\\uD83C[\\uDDE6-\\uDDFF\\uDFFB-\\uDFFF]|\\uDB40[\\uDC20-\\uDC7F\\uDD00-\\uDDEF])[\\uD800-\\uDBFF][\\uDC00-\\uDFFF]|[#*]\\uFE0F?\\u20E3|[^\\s<>‹›，。！？、；：,.!?;:…—↗↘⤴⤵〰~*_\"'“”‘’「」『』【】（）()\\[\\]{}&《》〈〉〖〗〘〙\\u0300-\\u036F\\u1AB0-\\u1AFF\\u1DC0-\\u1DFF\\u20D0-\\u20FF\\uFE00-\\uFE0F\\uFE20-\\uFE2F\\u200D\\uD800-\\uDFFF])(?:[\\u0300-\\u036F\\u1AB0-\\u1AFF\\u1DC0-\\u1DFF\\u20D0-\\u20FF\\uFE00-\\uFE0F\\uFE20-\\uFE2F]|\\uD83C[\\uDFFB-\\uDFFF]|\\uDB40[\\uDC20-\\uDC7F\\uDD00-\\uDDEF])*(?:\\u200D(?:&(?:[A-Za-z][A-Za-z0-9]+|#[0-9]+|#[xX][0-9A-Fa-f]+);|\\uD83C[\\uDDE6-\\uDDFF]\\uD83C[\\uDDE6-\\uDDFF]|(?!\\uD83C[\\uDDE6-\\uDDFF\\uDFFB-\\uDFFF]|\\uDB40[\\uDC20-\\uDC7F\\uDD00-\\uDDEF])[\\uD800-\\uDBFF][\\uDC00-\\uDFFF]|[#*]\\uFE0F?\\u20E3|[^\\s<>‹›，。！？、；：,.!?;:…—↗↘⤴⤵〰~*_\"'“”‘’「」『』【】（）()\\[\\]{}&《》〈〉〖〗〘〙\\u0300-\\u036F\\u1AB0-\\u1AFF\\u1DC0-\\u1DFF\\u20D0-\\u20FF\\uFE00-\\uFE0F\\uFE20-\\uFE2F\\u200D\\uD800-\\uDFFF])(?:[\\u0300-\\u036F\\u1AB0-\\u1AFF\\u1DC0-\\u1DFF\\u20D0-\\u20FF\\uFE00-\\uFE0F\\uFE20-\\uFE2F]|\\uD83C[\\uDFFB-\\uDFFF]|\\uDB40[\\uDC20-\\uDC7F\\uDD00-\\uDDEF])*)*)?((?:&(?:[A-Za-z][A-Za-z0-9]+|#[0-9]+|#[xX][0-9A-Fa-f]+);|\\uD83C[\\uDDE6-\\uDDFF]\\uD83C[\\uDDE6-\\uDDFF]|(?!\\uD83C[\\uDDE6-\\uDDFF\\uDFFB-\\uDFFF]|\\uDB40[\\uDC20-\\uDC7F\\uDD00-\\uDDEF])[\\uD800-\\uDBFF][\\uDC00-\\uDFFF]|[#*]\\uFE0F?\\u20E3|[^\\s<>‹›，。！？、；：,.!?;:…—↗↘⤴⤵〰~*_\"'“”‘’「」『』【】（）()\\[\\]{}&《》〈〉〖〗〘〙\\u0300-\\u036F\\u1AB0-\\u1AFF\\u1DC0-\\u1DFF\\u20D0-\\u20FF\\uFE00-\\uFE0F\\uFE20-\\uFE2F\\u200D\\uD800-\\uDFFF])(?:[\\u0300-\\u036F\\u1AB0-\\u1AFF\\u1DC0-\\u1DFF\\u20D0-\\u20FF\\uFE00-\\uFE0F\\uFE20-\\uFE2F]|\\uD83C[\\uDFFB-\\uDFFF]|\\uDB40[\\uDC20-\\uDC7F\\uDD00-\\uDDEF])*(?:\\u200D(?:&(?:[A-Za-z][A-Za-z0-9]+|#[0-9]+|#[xX][0-9A-Fa-f]+);|\\uD83C[\\uDDE6-\\uDDFF]\\uD83C[\\uDDE6-\\uDDFF]|(?!\\uD83C[\\uDDE6-\\uDDFF\\uDFFB-\\uDFFF]|\\uDB40[\\uDC20-\\uDC7F\\uDD00-\\uDDEF])[\\uD800-\\uDBFF][\\uDC00-\\uDFFF]|[#*]\\uFE0F?\\u20E3|[^\\s<>‹›，。！？、；：,.!?;:…—↗↘⤴⤵〰~*_\"'“”‘’「」『』【】（）()\\[\\]{}&《》〈〉〖〗〘〙\\u0300-\\u036F\\u1AB0-\\u1AFF\\u1DC0-\\u1DFF\\u20D0-\\u20FF\\uFE00-\\uFE0F\\uFE20-\\uFE2F\\u200D\\uD800-\\uDFFF])(?:[\\u0300-\\u036F\\u1AB0-\\u1AFF\\u1DC0-\\u1DFF\\u20D0-\\u20FF\\uFE00-\\uFE0F\\uFE20-\\uFE2F]|\\uD83C[\\uDFFB-\\uDFFF]|\\uDB40[\\uDC20-\\uDC7F\\uDD00-\\uDDEF])*)*)?((?:&(?:[A-Za-z][A-Za-z0-9]+|#[0-9]+|#[xX][0-9A-Fa-f]+);|\\uD83C[\\uDDE6-\\uDDFF]\\uD83C[\\uDDE6-\\uDDFF]|(?!\\uD83C[\\uDDE6-\\uDDFF\\uDFFB-\\uDFFF]|\\uDB40[\\uDC20-\\uDC7F\\uDD00-\\uDDEF])[\\uD800-\\uDBFF][\\uDC00-\\uDFFF]|[#*]\\uFE0F?\\u20E3|[^\\s<>‹›，。！？、；：,.!?;:…—↗↘⤴⤵〰~*_\"'“”‘’「」『』【】（）()\\[\\]{}&《》〈〉〖〗〘〙\\u0300-\\u036F\\u1AB0-\\u1AFF\\u1DC0-\\u1DFF\\u20D0-\\u20FF\\uFE00-\\uFE0F\\uFE20-\\uFE2F\\u200D\\uD800-\\uDFFF])(?:[\\u0300-\\u036F\\u1AB0-\\u1AFF\\u1DC0-\\u1DFF\\u20D0-\\u20FF\\uFE00-\\uFE0F\\uFE20-\\uFE2F]|\\uD83C[\\uDFFB-\\uDFFF]|\\uDB40[\\uDC20-\\uDC7F\\uDD00-\\uDDEF])*(?:\\u200D(?:&(?:[A-Za-z][A-Za-z0-9]+|#[0-9]+|#[xX][0-9A-Fa-f]+);|\\uD83C[\\uDDE6-\\uDDFF]\\uD83C[\\uDDE6-\\uDDFF]|(?!\\uD83C[\\uDDE6-\\uDDFF\\uDFFB-\\uDFFF]|\\uDB40[\\uDC20-\\uDC7F\\uDD00-\\uDDEF])[\\uD800-\\uDBFF][\\uDC00-\\uDFFF]|[#*]\\uFE0F?\\u20E3|[^\\s<>‹›，。！？、；：,.!?;:…—↗↘⤴⤵〰~*_\"'“”‘’「」『』【】（）()\\[\\]{}&《》〈〉〖〗〘〙\\u0300-\\u036F\\u1AB0-\\u1AFF\\u1DC0-\\u1DFF\\u20D0-\\u20FF\\uFE00-\\uFE0F\\uFE20-\\uFE2F\\u200D\\uD800-\\uDFFF])(?:[\\u0300-\\u036F\\u1AB0-\\u1AFF\\u1DC0-\\u1DFF\\u20D0-\\u20FF\\uFE00-\\uFE0F\\uFE20-\\uFE2F]|\\uD83C[\\uDFFB-\\uDFFF]|\\uDB40[\\uDC20-\\uDC7F\\uDD00-\\uDDEF])*)*)((?:(?:[，。！？、；：,.!?;:…—~*_\"'“”‘’「」『』【】（）()\\[\\]{}《》〈〉〖〗〘〙 \\t\\r\\u200B\\u2060]|\\n(?![ \\t]*\\r?\\n))|<\\/(?:t_(?:big|small|s)|span|strong|em|b|i|s|del|u|mark|q|a|font|ruby|rt|rp|sup|sub)\\s*>)*)(?:(?:[↗↘⤴⤵〰]|&#(?:0*8599|0*8600|0*10548|0*10549|0*12336);|&#[xX](?:0*2197|0*2198|0*2934|0*2935|0*3030);)[\\uFE0E\\uFE0F]?[ \\t]*)*((?:[↗↘⤴⤵〰]|&#(?:0*8599|0*8600|0*10548|0*10549|0*12336);|&#[xX](?:0*2197|0*2198|0*2934|0*2935|0*3030);))[\\uFE0E\\uFE0F]?(?![^<>]*>)/gi",
+        "replaceString": "<span style=\"white-space:nowrap;text-decoration:inherit;--t2-↗:translateY(-0.08em);--t3-↗:translateY(-0.16em);--t2-↘:translateY(0.08em);--t3-↘:translateY(0.16em);--t1-⤴:translateY(0.04em) rotate(3deg);--t2-⤴:translateY(0.08em) rotate(5deg);--t3-⤴:translateY(-0.14em) rotate(-8deg);--t2-⤵:translateY(0.06em) scale(0.94);--t3-⤵:translateY(0.12em) scale(0.88);--to1-⤵:0.85;--to2-⤵:0.65;--to3-⤵:0.4;--t1-〰:translateY(-0.06em) rotate(-4deg);--t2-〰:translateY(0.06em) rotate(4deg);--t3-〰:translateY(-0.06em) rotate(-4deg);\"><span style=\"display:inline-block;text-decoration:inherit;transform:var(--t1-$5,none);opacity:var(--to1-$5,1);\">$1</span><span style=\"display:inline-block;text-decoration:inherit;transform:var(--t2-$5,none);opacity:var(--to2-$5,1);\">$2</span><span style=\"display:inline-block;text-decoration:inherit;transform:var(--t3-$5,none);opacity:var(--to3-$5,1);\">$3</span></span>$4",
+        "trimStrings": [],
+        "placement": [
+            2
+        ],
+        "disabled": false,
+        "markdownOnly": true,
+        "promptOnly": false,
+        "runOnEdit": false,
+        "substituteRegex": 1,
+        "minDepth": null,
+        "maxDepth": 5
+    },
+    {
+        "id": "99964746-7e01-451b-8e97-34c833d90100",
+        "scriptName": "语气美化",
+        "findRegex": "/<t_(big|small|s)\\s*>(?:(\\s*[“「『\"«＂]+)((?:(?!<\\/t_\\1\\s*>)[\\s\\S])*?)([”」』\"»＂]+\\s*)|([\\s\\S]*?))<\\/t_\\1\\s*>/gi",
+        "replaceString": "$2<span style=\"--t-size-big:1.2em;--t-size-small:0.8em;--t-weight-big:700;--t-ink-s:linear-gradient(-2deg,transparent 44%,currentColor 46%,currentColor 53%,transparent 55%),linear-gradient(3deg,transparent 46%,currentColor 48%,currentColor 51%,transparent 53%);--t-size-biG:1.2em;--t-weight-biG:700;--t-size-bIg:1.2em;--t-weight-bIg:700;--t-size-bIG:1.2em;--t-weight-bIG:700;--t-size-Big:1.2em;--t-weight-Big:700;--t-size-BiG:1.2em;--t-weight-BiG:700;--t-size-BIg:1.2em;--t-weight-BIg:700;--t-size-BIG:1.2em;--t-weight-BIG:700;--t-size-smalL:0.8em;--t-size-smaLl:0.8em;--t-size-smaLL:0.8em;--t-size-smAll:0.8em;--t-size-smAlL:0.8em;--t-size-smALl:0.8em;--t-size-smALL:0.8em;--t-size-sMall:0.8em;--t-size-sMalL:0.8em;--t-size-sMaLl:0.8em;--t-size-sMaLL:0.8em;--t-size-sMAll:0.8em;--t-size-sMAlL:0.8em;--t-size-sMALl:0.8em;--t-size-sMALL:0.8em;--t-size-Small:0.8em;--t-size-SmalL:0.8em;--t-size-SmaLl:0.8em;--t-size-SmaLL:0.8em;--t-size-SmAll:0.8em;--t-size-SmAlL:0.8em;--t-size-SmALl:0.8em;--t-size-SmALL:0.8em;--t-size-SMall:0.8em;--t-size-SMalL:0.8em;--t-size-SMaLl:0.8em;--t-size-SMaLL:0.8em;--t-size-SMAll:0.8em;--t-size-SMAlL:0.8em;--t-size-SMALl:0.8em;--t-size-SMALL:0.8em;--t-ink-S:var(--t-ink-s);font-size:var(--t-size-$1,1em);font-weight:var(--t-weight-$1,inherit);background-image:var(--t-ink-$1,none);background-size:100% 0.7em;background-position:center;background-repeat:no-repeat;-webkit-box-decoration-break:clone;box-decoration-break:clone;text-decoration:none;\">$3$5</span>$4",
+        "trimStrings": [],
+        "placement": [
+            2
+        ],
+        "disabled": false,
+        "markdownOnly": true,
+        "promptOnly": false,
+        "runOnEdit": false,
+        "substituteRegex": 1,
+        "minDepth": null,
+        "maxDepth": 5
+    },
+    {
+        "id": "ecc90ad8-241c-4113-891d-530d8a23355a",
+        "scriptName": "⬇️",
+        "findRegex": "",
+        "replaceString": "",
+        "trimStrings": [],
+        "placement": [
+            2
+        ],
+        "disabled": true,
+        "markdownOnly": true,
+        "promptOnly": false,
+        "runOnEdit": false,
+        "substituteRegex": 0,
+        "minDepth": null,
+        "maxDepth": null
+    },
+    {
+        "id": "a8e84694-764e-49d3-8033-970bfcea75ce",
+        "scriptName": "双语美化-默认",
+        "findRegex": "/☆‹([^‹›]+)›\\n(.+)/g",
+        "replaceString": "<div class=\"sheep-bilingual\" style=\"margin:14px 0;\"><span style=\"font-size:0.85em;color:#87CEEB;line-height:1.3;opacity:0.85;\">$1</span><br>$2</div>",
+        "trimStrings": [],
+        "placement": [
+            2
+        ],
+        "disabled": true,
+        "markdownOnly": true,
+        "promptOnly": false,
+        "runOnEdit": false,
+        "substituteRegex": 1,
+        "minDepth": null,
+        "maxDepth": null
+    },
+    {
+        "id": "81785e45-41f0-4592-a0a3-20166c2d7642",
+        "scriptName": "双语美化-折叠",
+        "findRegex": "/☆‹([^‹›]+)›\\n(.+)/g",
+        "replaceString": "<div class=\"sheep-bilingual\" style=\"margin:14px 0;\"><details style=\"display:inline-block;vertical-align:top;width:100%;\"><summary style=\"cursor:pointer;color:#6b7fa3;font-size:0.75em;user-select:none;list-style:none;display:inline;\">▸ <span style=\"margin-left:6px;color:#F1F5F9;font-size:1.33em;line-height:1.6;\">$2</span></summary><div style=\"font-size:0.85em;color:#87CEEB;line-height:1.4;opacity:0.85;margin:8px 0 0 0;padding:8px 0 0 12px;border-left:2px solid #4a5568;\">$1</div></details></div>",
+        "trimStrings": [],
+        "placement": [
+            2
+        ],
+        "disabled": false,
+        "markdownOnly": true,
+        "promptOnly": false,
+        "runOnEdit": false,
+        "substituteRegex": 1,
+        "minDepth": null,
+        "maxDepth": null
+    },
+    {
+        "id": "0946963d-79df-46e2-b7f9-b75397482135",
+        "scriptName": "3️⃣",
+        "findRegex": "",
+        "replaceString": "",
+        "trimStrings": [],
+        "placement": [
+            2
+        ],
+        "disabled": true,
+        "markdownOnly": true,
+        "promptOnly": false,
+        "runOnEdit": false,
+        "substituteRegex": 0,
+        "minDepth": null,
+        "maxDepth": null
+    },
+    {
+        "id": "c64d31ff-8b70-4c20-896f-68031054ed2b",
+        "scriptName": "开场白美化",
+        "findRegex": "/<opening>\\s*([\\s\\S]*?)\\s*<\\/opening>/gi",
+        "replaceString": "\n<style>\n@keyframes glitchBarO2{0%{background-position:0 0}100%{background-position:0 200%}}\n@keyframes panelGlowO2{0%{box-shadow:0 0 15px rgba(136,68,255,0.2)}50%{box-shadow:0 0 35px rgba(136,68,255,0.35),0 0 60px rgba(0,255,255,0.08)}100%{box-shadow:0 0 15px rgba(136,68,255,0.2)}}\n@keyframes sheepGlitchO2{0%{text-shadow:0 0 0 transparent;transform:translate(0)}2%{text-shadow:2px 0 #ff00ff,-2px 0 #00ffff;transform:translate(-1px,1px)}4%{text-shadow:0 0 0 transparent;transform:translate(0)}30%{text-shadow:0 0 0 transparent}32%{text-shadow:-2px 1px #ff00ff,2px -1px #00ffff}34%{text-shadow:0 0 0 transparent}100%{text-shadow:0 0 0 transparent;transform:translate(0)}}\n@keyframes dotBlinkO2{0%{opacity:0.3}50%{opacity:1}100%{opacity:0.3}}\n@keyframes starFlowO2{0%{background-position:0% 50%}100%{background-position:200% 50%}}\n@keyframes titleGlowO2{0%{text-shadow:0 0 8px rgba(136,68,255,0.3),0 0 16px rgba(0,255,255,0.1)}50%{text-shadow:0 0 16px rgba(136,68,255,0.5),0 0 32px rgba(0,255,255,0.2)}100%{text-shadow:0 0 8px rgba(136,68,255,0.3),0 0 16px rgba(0,255,255,0.1)}}\n.sheep-o2-md ul,.sheep-o2-md ol{margin:2px 0 2px 1.2em;padding:0;}\n.sheep-o2-md li{margin:1px 0;line-height:1.8;}\n.sheep-o2-md p{margin:2px 0;}\n.sheep-o2-md hr{border:none;border-top:1px dashed rgba(136,68,255,0.4);margin:6px 0;}\n</style>\n<div style=\"max-width:100%;margin:14px 0;font-family:'Georgia','Songti SC',serif;\"><div style=\"border-radius:10px;overflow:hidden;animation:panelGlowO2 4s ease-in-out infinite;\"><div style=\"height:3px;background:linear-gradient(90deg,#0a001a,#8844ff,#00cccc,#8844ff,#0a001a);background-size:200% 100%;animation:starFlowO2 3s linear infinite;\"></div><div style=\"display:flex;background:linear-gradient(160deg,#0d0020,#1a0a35,#08001a);position:relative;\"><div style=\"width:28px;min-height:100%;background:linear-gradient(180deg,#8844ff22,#00cccc22,#8844ff22,#00cccc22);background-size:100% 200%;animation:glitchBarO2 4s linear infinite;border-right:1px solid rgba(136,68,255,0.2);flex-shrink:0;\"></div><div style=\"flex:1;min-width:0;position:relative;\"><div style=\"position:absolute;top:10px;right:14px;display:flex;gap:3px;z-index:3;\"><span style=\"width:3px;height:3px;border-radius:50%;background:#8844ff;animation:dotBlinkO2 2s infinite 0s;\"></span><span style=\"width:3px;height:3px;border-radius:50%;background:#00cccc;animation:dotBlinkO2 2s infinite 0.4s;\"></span><span style=\"width:3px;height:3px;border-radius:50%;background:#8844ff;animation:dotBlinkO2 2s infinite 0.8s;\"></span></div><div style=\"padding:22px 20px 14px;text-align:center;border-bottom:1px solid rgba(136,68,255,0.12);\"><span style=\"font-size:2em;display:inline-block;animation:sheepGlitchO2 3s infinite;filter:drop-shadow(0 0 8px rgba(136,68,255,0.5));margin-bottom:6px;\">🐑</span><div style=\"display:flex;align-items:center;justify-content:center;gap:8px;flex-wrap:nowrap;\"><span style=\"flex:0 0 30px;height:1px;background:linear-gradient(90deg,transparent,rgba(136,68,255,0.5));\"></span><span style=\"color:#c0a0ff;font-size:0.8em;letter-spacing:5px;animation:titleGlowO2 3s ease-in-out infinite;white-space:nowrap;\">SheepSheep</span><span style=\"flex:0 0 30px;height:1px;background:linear-gradient(270deg,transparent,rgba(136,68,255,0.5));\"></span></div><div style=\"color:rgba(160,200,255,0.6);font-size:0.6em;letter-spacing:3px;margin-top:2px;text-shadow:0 0 6px rgba(0,255,255,0.15);\">咩咩角色卡</div></div><div class=\"sheep-o2-md\" style=\"padding:18px 20px 20px;color:#dcd4f0;font-size:0.95em;line-height:1.8;white-space:pre-wrap;word-wrap:break-word;text-shadow:0 0 3px rgba(136,68,255,0.1);\">$1</div></div></div><div style=\"height:2px;background:linear-gradient(90deg,#0a001a,#8844ff55,#00cccc55,#8844ff55,#0a001a);background-size:200% 100%;animation:starFlowO2 4s linear infinite;\"></div></div></div>\n",
+        "trimStrings": [],
+        "placement": [
+            2
+        ],
+        "disabled": false,
+        "markdownOnly": true,
+        "promptOnly": false,
+        "runOnEdit": false,
+        "substituteRegex": 1,
+        "minDepth": null,
+        "maxDepth": 5
+    },
+    {
+        "id": "7c0d447b-ccb7-4165-b3e2-1c1b6d7351ca",
+        "scriptName": "同人搜索",
+        "findRegex": "/<lore_search>\\s*([\\s\\S]*?)\\s*<\\/lore_search>\\s*/gi",
+        "replaceString": "\n<style>\n@keyframes npcNeonSweep{0%{left:-30%}100%{left:130%}}\n@keyframes npcPulseFlow{0%{background-position:0% 50%;box-shadow:0 0 12px rgba(136,68,255,0.3),0 0 25px rgba(0,255,255,0.05)}30%{box-shadow:0 0 25px rgba(136,68,255,0.6),0 0 50px rgba(0,255,255,0.2)}50%{background-position:100% 50%;box-shadow:0 0 12px rgba(136,68,255,0.3),0 0 25px rgba(0,255,255,0.05)}80%{box-shadow:0 0 25px rgba(0,255,255,0.5),0 0 50px rgba(136,68,255,0.2)}100%{background-position:0% 50%;box-shadow:0 0 12px rgba(136,68,255,0.3),0 0 25px rgba(0,255,255,0.05)}}\n@keyframes npcFadeSlideIn{0%{opacity:0;max-height:0}100%{opacity:1;max-height:2000px}}\n@keyframes npcTitleFlow{0%,100%{background-position:0% 50%}50%{background-position:100% 50%}}\n.npc-pulse-content ul,.npc-pulse-content ol{margin:2px 0 2px 1.2em;padding:0;}\n.npc-pulse-content li{margin:1px 0;line-height:1.6;}\n.npc-pulse-content p{margin:2px 0;}\n.npc-pulse-content hr{border:none;border-top:1px dashed rgba(136,68,255,0.4);margin:6px 0;}\n.npc-title{flex-shrink:0;padding:0 0.8em;font-size:0.8em;font-family:monospace;letter-spacing:2px;white-space:nowrap;text-align:center;background:linear-gradient(90deg,#8844ff,#00cccc,#8844ff);background-size:200% 100%;-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;color:transparent;animation:npcTitleFlow 4s ease-in-out infinite;opacity:0.85;}\n</style>\n<div style=\"margin:6px 0;\"><details style=\"width:100%;\"><summary style=\"display:flex;align-items:center;justify-content:center;gap:0;padding:2px 0;cursor:pointer;list-style:none;\"><div style=\"flex:1;height:1px;background:rgba(136,68,255,0.1);border-radius:1px;position:relative;overflow:hidden;\"><div style=\"position:absolute;top:0;height:100%;width:30%;background:linear-gradient(90deg,transparent,rgba(0,204,204,0.4),transparent);animation:npcNeonSweep 4s ease-in-out infinite;\"></div></div><span class=\"npc-title\">🔍同人搜索</span><div style=\"flex:1;height:1px;background:rgba(136,68,255,0.1);border-radius:1px;position:relative;overflow:hidden;\"><div style=\"position:absolute;top:0;height:100%;width:30%;background:linear-gradient(90deg,transparent,rgba(0,204,204,0.4),transparent);animation:npcNeonSweep 4s ease-in-out 2s infinite;\"></div></div></summary><div style=\"margin-top:4px;padding:2px;border-radius:8px;background:linear-gradient(270deg,#0a001a,#8844ff,#00cccc,#8844ff,#0a001a);background-size:400% 400%;animation:npcPulseFlow 4s ease-in-out infinite,npcFadeSlideIn 0.4s ease-out;max-width:100%;box-sizing:border-box;overflow:hidden;\"><div class=\"npc-pulse-content\" style=\"border-radius:7px;background:radial-gradient(ellipse at center,#120828,#08001a);color:#e6e6fa;padding:14px;font-size:0.85em;line-height:1.6;font-family:monospace;word-wrap:break-word;overflow-wrap:break-word;max-height:200px;overflow-y:auto;white-space:pre-wrap;text-shadow:0 0 3px #8855ff22;margin:0;\">$1</div></div></details></div>\n",
+        "trimStrings": [],
+        "placement": [
+            2
+        ],
+        "disabled": false,
+        "markdownOnly": true,
+        "promptOnly": false,
+        "runOnEdit": false,
+        "substituteRegex": 1,
+        "minDepth": null,
+        "maxDepth": 5
+    },
+    {
+        "id": "4fb1c05c-ec99-4321-b15a-9a91d9e60f41",
+        "scriptName": "战斗引擎",
+        "findRegex": "/<combat_driver>\\s*([\\s\\S]*?)\\s*<\\/combat_driver>\\s*/gi",
+        "replaceString": "\n<style>\n@keyframes combatNeonSweep{0%{left:-30%}100%{left:130%}}\n@keyframes combatFlow{0%,100%{background-position:0% 50%}50%{background-position:100% 50%}}\n@keyframes combatFadeSlideIn{0%{opacity:0;max-height:0}100%{opacity:1;max-height:2000px}}\n.combat-content ul,.combat-content ol{margin:2px 0 2px 1.2em;padding:0;}\n.combat-content li{margin:1px 0;line-height:1.6;}\n.combat-content p{margin:2px 0;}\n.combat-content hr{border:none;border-top:1px dashed rgba(255,68,68,0.4);margin:6px 0;}\n</style>\n<div style=\"margin:6px 0;\"><details style=\"width:100%;\"><summary style=\"display:flex;align-items:center;justify-content:center;gap:0;padding:2px 0;cursor:pointer;list-style:none;\"><div style=\"flex:1;height:1px;background:rgba(255,68,68,0.1);border-radius:1px;position:relative;overflow:hidden;\"><div style=\"position:absolute;top:0;height:100%;width:30%;background:linear-gradient(90deg,transparent,rgba(255,68,68,0.4),transparent);animation:combatNeonSweep 4s ease-in-out infinite;\"></div></div><span style=\"flex-shrink:0;padding:0 0.8em;font-size:0.8em;font-family:monospace;color:rgba(255,68,68,0.45);letter-spacing:2px;white-space:nowrap;text-align:center;\">⚔️战斗思维链</span><div style=\"flex:1;height:1px;background:rgba(255,68,68,0.1);border-radius:1px;position:relative;overflow:hidden;\"><div style=\"position:absolute;top:0;height:100%;width:30%;background:linear-gradient(90deg,transparent,rgba(255,68,68,0.4),transparent);animation:combatNeonSweep 4s ease-in-out 2s infinite;\"></div></div></summary><div style=\"margin-top:4px;padding:2px;border-radius:8px;background:linear-gradient(270deg,#1a0000,#ff4444,#ffcc00,#ff4444,#1a0000);background-size:400% 400%;animation:combatFlow 5s ease infinite,combatFadeSlideIn 0.4s ease-out;box-shadow:0 0 18px rgba(255,68,68,0.35),0 0 40px rgba(255,204,0,0.1);max-width:100%;box-sizing:border-box;overflow:hidden;\"><div class=\"combat-content\" style=\"border-radius:7px;background:radial-gradient(ellipse at center,#1a0505,#0a0000);color:#ffcccc;padding:14px;font-size:0.85em;line-height:1.6;font-family:monospace;word-wrap:break-word;overflow-wrap:break-word;max-height:200px;overflow-y:auto;white-space:pre-wrap;text-shadow:0 0 3px #ff444422;margin:0;\">$1</div></div></details></div>\n",
+        "trimStrings": [],
+        "placement": [
+            2
+        ],
+        "disabled": false,
+        "markdownOnly": true,
+        "promptOnly": false,
+        "runOnEdit": false,
+        "substituteRegex": 1,
+        "minDepth": null,
+        "maxDepth": 5
+    },
+    {
+        "id": "a653dfe4-a129-4e2d-b0b1-32e9e84e4be2",
+        "scriptName": "故事引擎",
+        "findRegex": "/<story_driver>\\s*([\\s\\S]*?)\\s*<\\/story_driver>\\s*/gi",
+        "replaceString": "\n<style>\n@keyframes orbPulse{0%{box-shadow:0 0 8px rgba(136,68,255,0.4),0 0 20px rgba(0,255,255,0.1)}50%{box-shadow:0 0 20px rgba(136,68,255,0.7),0 0 40px rgba(0,255,255,0.3)}100%{box-shadow:0 0 8px rgba(136,68,255,0.4),0 0 20px rgba(0,255,255,0.1)}}\n@keyframes floatBob{0%{transform:translateY(0)}50%{transform:translateY(-4px)}100%{transform:translateY(0)}}\n@keyframes glitchEmoji{0%,4%,30%,34%,60%,63%,100%{text-shadow:0 0 0 transparent}2%{text-shadow:2px 0 #ff00ff,-2px 0 #00ffff}32%{text-shadow:-2px 0 #ff00ff,2px 0 #00ffff}61%{text-shadow:1px 1px #ff00ff,-1px -1px #00ffff}}\n@keyframes scanLine{0%{left:-30%}100%{left:130%}}\n@keyframes progressBar{0%{width:0%}50%{width:100%}100%{width:0%}}\n@keyframes fadeSlideIn{0%{opacity:0;max-height:0}100%{opacity:1;max-height:4000px}}\n@keyframes pulseFlow{0%,100%{background-position:0% 50%}50%{background-position:100% 50%}}\n.orb-content{padding:10px 14px 8px;font-size:0.9em;line-height:1.6;font-family:monospace;white-space:pre-wrap;word-wrap:break-word;overflow-wrap:break-word;text-shadow:0 0 3px #8855ff22;color:#e6e6fa;position:relative;}\n.orb-content ul,.orb-content ol{margin:2px 0 2px 1.2em;padding:0;}\n.orb-content li{margin:1px 0;line-height:1.6;}\n.orb-content p{margin:2px 0;}\n.orb-content hr{border:none;border-top:1px dashed rgba(136,68,255,0.4);margin:6px 0;}\n.orb-content strong{color:#a0e0ff;}\n.orb-content em{color:#ffb0e0;}\n</style>\n<div style=\"margin:8px 0;text-align:center;\">\n<details style=\"display:inline-block;text-align:left;max-width:100%;\">\n<summary style=\"display:flex;align-items:center;justify-content:center;width:2.25em;height:2.25em;border-radius:50%;background:radial-gradient(circle at 35% 35%,#2a1050,#0d0020,#08001a);border:2px solid rgba(136,68,255,0.5);cursor:pointer;list-style:none;font-size:1.25em;margin:0 auto;user-select:none;animation:floatBob 2.5s ease-in-out infinite,orbPulse 2s ease-in-out infinite,glitchEmoji 3s infinite;\">🐑</summary>\n<div style=\"margin-top:6px;padding:2px;border-radius:10px;background:linear-gradient(270deg,#0a001a,#8844ff,#00cccc,#8844ff,#0a001a);background-size:400% 400%;animation:pulseFlow 4s ease-in-out infinite,fadeSlideIn 0.4s ease-out;max-width:100%;box-sizing:border-box;overflow:hidden;\">\n<div style=\"border-radius:9px;background:radial-gradient(ellipse at center,#120828,#08001a);margin:0;overflow:hidden;\">\n<div class=\"orb-content\"><span style=\"display:block;height:1px;margin:0 auto 8px;width:80%;position:relative;overflow:hidden;background:rgba(136,68,255,0.15);border-radius:1px;\"><span style=\"position:absolute;top:0;height:100%;width:30%;background:linear-gradient(90deg,transparent,#00ffff,transparent);animation:scanLine 2.5s ease-in-out infinite;\"></span></span>$1</div>\n<div style=\"height:2px;margin:0 14px 8px;background:rgba(136,68,255,0.15);border-radius:1px;overflow:hidden;\"><div style=\"height:100%;background:linear-gradient(90deg,#8844ff,#00ffff);animation:progressBar 6s ease-in-out infinite;border-radius:1px;\"></div></div>\n</div>\n</div>\n</details>\n</div>\n",
+        "trimStrings": [],
+        "placement": [
+            2
+        ],
+        "disabled": false,
+        "markdownOnly": true,
+        "promptOnly": false,
+        "runOnEdit": false,
+        "substituteRegex": 1,
+        "minDepth": null,
+        "maxDepth": 5
+    },
+    {
+        "id": "d30b51e5-cc8e-42ae-a005-a2c52c44c3e0",
+        "scriptName": "acg角色心理模型",
+        "findRegex": "/<acg_think>\\s*([\\s\\S]*?)\\s*<\\/acg_think>\\s*/gi",
+        "replaceString": "\n<style>\n@keyframes psycheNeonSweep{0%{left:-30%}100%{left:130%}}\n@keyframes psychePulseFlow{0%,100%{background-position:0% 50%}50%{background-position:100% 50%}}\n@keyframes psycheFadeSlideIn{0%{opacity:0;max-height:0}100%{opacity:1;max-height:2000px}}\n.psyche-md ul,.psyche-md ol{margin:2px 0 2px 1.2em;padding:0;}\n.psyche-md li{margin:1px 0;line-height:1.6;}\n.psyche-md p{margin:2px 0;}\n.psyche-md hr{border:none;border-top:1px dashed rgba(136,68,255,0.4);margin:6px 0;}\n</style>\n<div style=\"margin:6px 0;\"><details style=\"width:100%;\"><summary style=\"display:flex;align-items:center;justify-content:center;gap:0;padding:2px 0;cursor:pointer;list-style:none;\"><div style=\"flex:1;height:1px;background:rgba(136,68,255,0.1);border-radius:1px;position:relative;overflow:hidden;\"><div style=\"position:absolute;top:0;height:100%;width:30%;background:linear-gradient(90deg,transparent,rgba(136,68,255,0.4),transparent);animation:psycheNeonSweep 4s ease-in-out infinite;\"></div></div><span style=\"flex-shrink:0;padding:0 0.8em;font-size:0.8em;font-family:monospace;color:rgba(136,68,255,0.35);letter-spacing:2px;white-space:nowrap;text-align:center;\">acg角色心理模型</span><div style=\"flex:1;height:1px;background:rgba(136,68,255,0.1);border-radius:1px;position:relative;overflow:hidden;\"><div style=\"position:absolute;top:0;height:100%;width:30%;background:linear-gradient(90deg,transparent,rgba(136,68,255,0.4),transparent);animation:psycheNeonSweep 4s ease-in-out 2s infinite;\"></div></div></summary><div style=\"margin-top:4px;padding:2px;border-radius:10px;background:linear-gradient(270deg,#0d001a,#6622cc,#8844ff,#6622cc,#0d001a);background-size:400% 400%;animation:psychePulseFlow 4s ease-in-out infinite,psycheFadeSlideIn 0.4s ease-out;box-sizing:border-box;overflow:hidden;\"><div class=\"psyche-md\" style=\"border-radius:9px;background:radial-gradient(ellipse at center,#140a28,#080012);color:#c8b0e8;padding:12px 14px;font-size:0.85em;line-height:1.6;font-family:monospace;word-wrap:break-word;overflow-wrap:break-word;white-space:pre-wrap;text-shadow:0 0 3px rgba(136,68,255,0.08);max-height:150px;overflow-y:auto;\">$1</div></div></details></div>\n",
+        "trimStrings": [],
+        "placement": [
+            2
+        ],
+        "disabled": false,
+        "markdownOnly": true,
+        "promptOnly": false,
+        "runOnEdit": false,
+        "substituteRegex": 1,
+        "minDepth": null,
+        "maxDepth": 5
+    },
+    {
+        "id": "48dbb1a7-1b8f-4a09-8d5a-179fb7342a14",
+        "scriptName": "4️⃣",
+        "findRegex": "",
+        "replaceString": "",
+        "trimStrings": [],
+        "placement": [
+            2
+        ],
+        "disabled": true,
+        "markdownOnly": true,
+        "promptOnly": false,
+        "runOnEdit": false,
+        "substituteRegex": 0,
+        "minDepth": null,
+        "maxDepth": null
+    },
+    {
+        "id": "6b8ace00-9693-4535-9f5b-92059cae2df5",
+        "scriptName": "特殊状态栏美化-SillyTavern",
+        "findRegex": "/<special_status>\\s*([\\s\\S]*?)<\\/special_status>/gi",
+        "replaceString": "\n```html\n<!DOCTYPE html>\n<html lang=\"zh-CN\">\n<head>\n<meta charset=\"UTF-8\">\n<meta name=\"viewport\" content=\"width=device-width,initial-scale=1.0\">\n<title>特殊状态栏</title>\n</head>\n<body>\n\n<div class=\"cyber-safari-cyan\" style=\"margin:4px 0;font-family:-apple-system,BlinkMacSystemFont,'SF Pro Text','Segoe UI',sans-serif;min-width:0;max-width:100%;\">\n  <div class=\"csc-stream-wrap\">\n    <div class=\"csc-inner-shell\">\n      <div class=\"csc-toolbar\">\n        <div class=\"csc-tabs-window\">\n          <div class=\"csc-tabs-viewport\">\n            <div class=\"csc-tabs-shelf\"></div>\n          </div>\n        </div>\n      </div>\n      <div class=\"csc-panel-content\"></div>\n    </div>\n  </div>\n</div>\n\n<style>\n.cyber-safari-cyan .csc-stream-wrap {\n  padding: 2px;\n  border-radius: 10px;\n  background: linear-gradient(270deg,#001a1a,#00ffcc,#0088ff,#00ffcc,#001a1a);\n  background-size: 400% 400%;\n  animation: cscFlow 4s ease-in-out infinite;\n  box-shadow: 0 0 8px rgba(0,255,204,0.3);\n  box-sizing: border-box;\n  overflow: hidden;\n}\n.cyber-safari-cyan .csc-inner-shell {\n  background: #000d0d;\n  border-radius: 8px;\n  overflow: hidden;\n  min-width: 0;\n}\n.cyber-safari-cyan .csc-toolbar {\n  padding: 6px 10px 0 10px;\n  background: #000808;\n  border-bottom: 1px solid rgba(0,255,204,0.25);\n  user-select: none;\n  min-width: 0;\n}\n.cyber-safari-cyan .csc-tabs-window {\n  position: relative;\n  height: 37px;\n  margin: -6px -8px -1px;\n  overflow: hidden;\n}\n.cyber-safari-cyan .csc-tabs-window:before,.cyber-safari-cyan .csc-tabs-window:after {\n  content: \"\";\n  position: absolute;\n  top: 0;\n  bottom: 0;\n  width: 24px;\n  z-index: 2;\n  pointer-events: none;\n  opacity: 0;\n  transition: opacity 0.15s ease;\n}\n.cyber-safari-cyan .csc-tabs-window:before {\n  left: 0;\n  background: linear-gradient(to right,#000808,rgba(0,8,8,0));\n}\n.cyber-safari-cyan .csc-tabs-window:after {\n  right: 0;\n  background: linear-gradient(to left,#000808,rgba(0,8,8,0));\n}\n.cyber-safari-cyan .csc-tabs-window.has-left:before,.cyber-safari-cyan .csc-tabs-window.has-right:after {\n  opacity: 1;\n}\n.cyber-safari-cyan .csc-tabs-viewport {\n  height: 37px;\n  box-sizing: border-box;\n  padding: 6px 8px 1px;\n  overflow-x: auto;\n  overflow-y: hidden;\n  scrollbar-width: none;\n  -ms-overflow-style: none;\n  -webkit-overflow-scrolling: touch;\n  touch-action: auto;\n  overscroll-behavior-x: contain;\n  direction: ltr;\n  scroll-behavior: auto;\n}\n.cyber-safari-cyan .csc-tabs-viewport::-webkit-scrollbar {\n  display: none;\n  width: 0;\n  height: 0;\n}\n.cyber-safari-cyan .csc-tabs-shelf {\n  display: flex;\n  flex-wrap: nowrap;\n  gap: 4px;\n  align-items: flex-end;\n  width: max-content;\n  min-width: 100%;\n  height: 30px;\n}\n.cyber-safari-cyan .csc-tab {\n  flex: 0 0 auto;\n  box-sizing: border-box;\n  height: 28px;\n  width: auto;\n  min-width: max-content;\n  white-space: nowrap;\n  word-break: normal;\n  overflow-wrap: normal;\n  border: none;\n  background: transparent;\n  padding: 4px 14px;\n  border-radius: 6px 6px 0 0;\n  font-size: 0.75em;\n  font-weight: 600;\n  color: #5a9999;\n  cursor: pointer;\n  transition: all 0.15s ease;\n  outline: none;\n  position: relative;\n  margin-bottom: -1px;\n  -webkit-appearance: none;\n  appearance: none;\n  -webkit-tap-highlight-color: transparent;\n}\n@media(hover:hover) and (pointer:fine) {\n  .cyber-safari-cyan .csc-tab:hover {\n    color: #e6fafa;\n    background: rgba(0,255,204,0.1);\n  }\n}\n@media(hover:none),(pointer:coarse) {\n  .cyber-safari-cyan .csc-tab:not(.active):hover {\n    color: #5a9999;\n    background: transparent;\n  }\n}\n.cyber-safari-cyan .csc-tab.active {\n  background: #081a1a;\n  color: #00ffcc;\n  text-shadow: 0 0 8px rgba(0,255,204,0.6);\n  border-top: 2px solid #00ffcc;\n  border-left: 1px solid rgba(0,255,204,0.25);\n  border-right: 1px solid rgba(0,255,204,0.25);\n  border-bottom: 1px solid #081a1a;\n  box-shadow: 0 -2px 8px rgba(0,255,204,0.15);\n}\n.cyber-safari-cyan .csc-panel-content {\n  padding: 12px 16px;\n  max-height: 160px;\n  overflow-y: auto;\n  background: radial-gradient(ellipse at center,#081a1a,#000808);\n  color: #e6fafa;\n  font-size: 0.85em;\n  line-height: 1.7;\n  white-space: pre-wrap;\n  word-break: break-word;\n  word-wrap: break-word;\n  text-shadow: 0 0 2px rgba(0,255,204,0.15);\n  scrollbar-width: thin;\n  scrollbar-color: #00ffcc #000808;\n}\n.cyber-safari-cyan .csc-panel-content::-webkit-scrollbar {\n  width: 5px;\n}\n.cyber-safari-cyan .csc-panel-content::-webkit-scrollbar-thumb {\n  background: #00ffcc;\n  border-radius: 4px;\n}\n.cyber-safari-cyan .csc-panel-content::-webkit-scrollbar-track {\n  background: #000808;\n}\n@keyframes cscFlow {\n  0%,100% {\n    background-position: 0% 50%;\n  }\n  50% {\n    background-position: 100% 50%;\n  }\n}\n</style>\n\n<script>\n(function(){\n  let script=document.currentScript;\n  let root=script&&script.previousElementSibling&&script.previousElementSibling.previousElementSibling;\n  if(!root||!root.classList.contains('cyber-safari-cyan')){\n    let all=document.querySelectorAll('.cyber-safari-cyan');\n    root=all[all.length-1];\n  }\n  if(!root)return;\n  let raw=`$1`;\n  let panels=[];\n  let r=/\\[([^\\[\\]\\r\\n]+)\\]([\\s\\S]*?)\\[\\/\\1\\]/g;\n  let m;\n  while((m=r.exec(raw))!==null)panels.push({id:m[1],body:m[2].trim()});\n  let tabs=root.querySelector('.csc-tabs-shelf');\n  let viewport=root.querySelector('.csc-tabs-viewport');\n  let windowEl=root.querySelector('.csc-tabs-window');\n  let content=root.querySelector('.csc-panel-content');\n  let bar=root.querySelector('.csc-toolbar');\n  if(!panels.length){content.innerHTML=raw.trim();bar.style.display='none';return;}\n  let buttons=[];\n  panels.forEach((item,index)=>{\n    let p=document.createElement('div');\n    p.style.display=index===0?'block':'none';\n    p.innerHTML=item.body;\n    content.appendChild(p);\n    let b=document.createElement('button');\n    b.type='button';\n    b.className='csc-tab'+(index===0?' active':'');\n    b.textContent=item.id;\n    b.onclick=()=>{\n      Array.from(content.children).forEach(el=>el.style.display='none');\n      p.style.display='block';\n      buttons.forEach(el=>el.classList.remove('active'));\n      b.classList.add('active');\n      requestAnimationFrame(updateShadows);\n    };\n    tabs.appendChild(b);\n    buttons.push(b);\n  });\n  function maxScroll(){return Math.max(0,viewport.scrollWidth-viewport.clientWidth);}\n  function updateShadows(){\n    let max=maxScroll();\n    let x=Math.max(0,Math.min(max,viewport.scrollLeft));\n    windowEl.classList.toggle('has-left',x>1);\n    windowEl.classList.toggle('has-right',max-x>1);\n  }\n  viewport.addEventListener('scroll',updateShadows,{passive:true});\n  tabs.addEventListener('transitionend',updateShadows);\n  if(typeof ResizeObserver!=='undefined'){\n    let observer=new ResizeObserver(updateShadows);\n    observer.observe(viewport);\n    observer.observe(tabs);\n  }else window.addEventListener('resize',updateShadows);\n  if(document.fonts&&document.fonts.ready)document.fonts.ready.then(updateShadows);\n  requestAnimationFrame(updateShadows);\n})();\n</script>\n\n</body>\n</html>\n```\n",
+        "trimStrings": [],
+        "placement": [
+            2
+        ],
+        "disabled": false,
+        "markdownOnly": true,
+        "promptOnly": false,
+        "runOnEdit": false,
+        "substituteRegex": 1,
+        "minDepth": null,
+        "maxDepth": 5
+    },
+    {
+        "id": "44712fb0-a17c-4588-95da-32a4462765f4",
+        "scriptName": "特殊状态栏美化-非SillyTavern",
+        "findRegex": "/<special_status>\\s*([\\s\\S]*?)<\\/special_status>/gi",
+        "replaceString": "\n<div class=\"cyber-safari-cyan\" style=\"margin:16px 0;font-family:-apple-system,BlinkMacSystemFont,'SF Pro Text','Segoe UI',sans-serif;min-width:0;max-width:100%;\"><div class=\"csc-stream-wrap\"><div class=\"csc-inner-shell\"><div class=\"csc-toolbar\"><div class=\"csc-tabs-window\"><div class=\"csc-tabs-viewport\"><div class=\"csc-tabs-shelf\"></div></div></div></div><div class=\"csc-panel-content\"></div></div></div></div><style>.cyber-safari-cyan .csc-stream-wrap{padding:2px;border-radius:10px;background:linear-gradient(270deg,#001a1a,#00ffcc,#0088ff,#00ffcc,#001a1a);background-size:400% 400%;animation:cscFlow 4s ease-in-out infinite;box-shadow:0 0 8px rgba(0,255,204,0.3);box-sizing:border-box;overflow:hidden}.cyber-safari-cyan .csc-inner-shell{background:#000d0d;border-radius:8px;overflow:hidden;min-width:0}.cyber-safari-cyan .csc-toolbar{padding:6px 10px 0 10px;background:#000808;border-bottom:1px solid rgba(0,255,204,0.25);user-select:none;min-width:0}.cyber-safari-cyan .csc-tabs-window{position:relative;height:37px;margin:-6px -8px -1px;overflow:hidden}.cyber-safari-cyan .csc-tabs-window:before,.cyber-safari-cyan .csc-tabs-window:after{content:\"\";position:absolute;top:0;bottom:0;width:24px;z-index:2;pointer-events:none;opacity:0;transition:opacity 0.15s ease}.cyber-safari-cyan .csc-tabs-window:before{left:0;background:linear-gradient(to right,#000808,rgba(0,8,8,0))}.cyber-safari-cyan .csc-tabs-window:after{right:0;background:linear-gradient(to left,#000808,rgba(0,8,8,0))}.cyber-safari-cyan .csc-tabs-window.has-left:before,.cyber-safari-cyan .csc-tabs-window.has-right:after{opacity:1}.cyber-safari-cyan .csc-tabs-viewport{height:37px;box-sizing:border-box;padding:6px 8px 1px;overflow-x:auto;overflow-y:hidden;scrollbar-width:none;-ms-overflow-style:none;-webkit-overflow-scrolling:touch;touch-action:auto;overscroll-behavior-x:contain;direction:ltr;scroll-behavior:auto}.cyber-safari-cyan .csc-tabs-viewport::-webkit-scrollbar{display:none;width:0;height:0}.cyber-safari-cyan .csc-tabs-shelf{display:flex;flex-wrap:nowrap;gap:4px;align-items:flex-end;width:max-content;min-width:100%;height:30px}.cyber-safari-cyan .csc-tab{flex:0 0 auto;box-sizing:border-box;height:28px;width:auto;min-width:max-content;white-space:nowrap;word-break:normal;overflow-wrap:normal;border:none;background:transparent;padding:4px 14px;border-radius:6px 6px 0 0;font-size:0.75em;font-weight:600;color:#5a9999;cursor:pointer;transition:all 0.15s ease;outline:none;position:relative;margin-bottom:-1px;-webkit-appearance:none;appearance:none;-webkit-tap-highlight-color:transparent}@media(hover:hover) and (pointer:fine){.cyber-safari-cyan .csc-tab:hover{color:#e6fafa;background:rgba(0,255,204,0.1)}}@media(hover:none),(pointer:coarse){.cyber-safari-cyan .csc-tab:not(.active):hover{color:#5a9999;background:transparent}}.cyber-safari-cyan .csc-tab.active{background:#081a1a;color:#00ffcc;text-shadow:0 0 8px rgba(0,255,204,0.6);border-top:2px solid #00ffcc;border-left:1px solid rgba(0,255,204,0.25);border-right:1px solid rgba(0,255,204,0.25);border-bottom:1px solid #081a1a;box-shadow:0 -2px 8px rgba(0,255,204,0.15)}.cyber-safari-cyan .csc-panel-content{padding:12px 16px;max-height:160px;overflow-y:auto;background:radial-gradient(ellipse at center,#081a1a,#000808);color:#e6fafa;font-size:0.85em;line-height:1.7;white-space:pre-wrap;word-break:break-word;word-wrap:break-word;text-shadow:0 0 2px rgba(0,255,204,0.15);scrollbar-width:thin;scrollbar-color:#00ffcc #000808}.cyber-safari-cyan .csc-panel-content::-webkit-scrollbar{width:5px}.cyber-safari-cyan .csc-panel-content::-webkit-scrollbar-thumb{background:#00ffcc;border-radius:4px}.cyber-safari-cyan .csc-panel-content::-webkit-scrollbar-track{background:#000808}@keyframes cscFlow{0%,100%{background-position:0% 50%}50%{background-position:100% 50%}}</style><script>(function(){let script=document.currentScript;let root=script&&script.previousElementSibling&&script.previousElementSibling.previousElementSibling;if(!root||!root.classList.contains('cyber-safari-cyan')){let all=document.querySelectorAll('.cyber-safari-cyan');root=all[all.length-1];}if(!root)return;let raw=`$1`;let panels=[];let r=/\\[([^\\[\\]\\r\\n]+)\\]([\\s\\S]*?)\\[\\/\\1\\]/g;let m;while((m=r.exec(raw))!==null)panels.push({id:m[1],body:m[2].trim()});let tabs=root.querySelector('.csc-tabs-shelf');let viewport=root.querySelector('.csc-tabs-viewport');let windowEl=root.querySelector('.csc-tabs-window');let content=root.querySelector('.csc-panel-content');let bar=root.querySelector('.csc-toolbar');if(!panels.length){content.innerHTML=raw.trim();bar.style.display='none';return;}let buttons=[];panels.forEach((item,index)=>{let p=document.createElement('div');p.style.display=index===0?'block':'none';p.innerHTML=item.body;content.appendChild(p);let b=document.createElement('button');b.type='button';b.className='csc-tab'+(index===0?' active':'');b.textContent=item.id;b.onclick=()=>{Array.from(content.children).forEach(el=>el.style.display='none');p.style.display='block';buttons.forEach(el=>el.classList.remove('active'));b.classList.add('active');requestAnimationFrame(updateShadows);};tabs.appendChild(b);buttons.push(b);});function maxScroll(){return Math.max(0,viewport.scrollWidth-viewport.clientWidth);}function updateShadows(){let max=maxScroll();let x=Math.max(0,Math.min(max,viewport.scrollLeft));windowEl.classList.toggle('has-left',x>1);windowEl.classList.toggle('has-right',max-x>1);}viewport.addEventListener('scroll',updateShadows,{passive:true});tabs.addEventListener('transitionend',updateShadows);if(typeof ResizeObserver!=='undefined'){let observer=new ResizeObserver(updateShadows);observer.observe(viewport);observer.observe(tabs);}else window.addEventListener('resize',updateShadows);if(document.fonts&&document.fonts.ready)document.fonts.ready.then(updateShadows);requestAnimationFrame(updateShadows);})();</script>\n",
+        "trimStrings": [],
+        "placement": [
+            2
+        ],
+        "disabled": true,
+        "markdownOnly": true,
+        "promptOnly": false,
+        "runOnEdit": false,
+        "substituteRegex": 1,
+        "minDepth": null,
+        "maxDepth": 5
+    },
+    {
+        "id": "50212ab9-5a6d-4b4a-873a-59dc865d7610",
+        "scriptName": "剧情记忆归档美化",
+        "findRegex": "/<memory_log>\\s*([\\s\\S]*?)\\s*<\\/memory_log>\\s*/gi",
+        "replaceString": "\n<div style=\"text-align:center;margin:4px 0;\"><details style=\"text-align:center;width:100%;display:inline-block;\"><summary style=\"display:inline-flex;align-items:center;gap:6px;padding:5px 16px 5px 8px;border-radius:50px;background:radial-gradient(circle at 20% 40%,#2a1050,#0d0020);border:1.5px solid rgba(204,136,0,0.5);cursor:pointer;list-style:none;font-size:0.9em;user-select:none;animation:floatBob 2.5s ease-in-out infinite;box-shadow:0 0 8px rgba(204,136,0,0.3);color:#ffe6a0;font-family:monospace;letter-spacing:0.5px;\"><span style=\"font-size:1.2em;animation:glitchEmoji 3s infinite;\">📑</span><span style=\"font-size:0.9em;opacity:0.7;\">剧情记忆归档</span></summary><div style=\"margin-top:6px;text-align:left;padding:2px;border-radius:10px;background:linear-gradient(270deg,#0a0800,#cc8800,#ffcc00,#cc8800,#0a0800);background-size:400% 400%;animation:pulseFlow 4s ease-in-out infinite,fadeSlideIn 0.4s ease-out;box-sizing:border-box;overflow:hidden;\"><div style=\"border-radius:9px;background:radial-gradient(ellipse at center,#2a2000,#0a0800);color:#ffe6a0;padding:15px;font-size:0.85em;line-height:1.7;font-family:sans-serif;white-space:pre-wrap;max-height:220px;overflow-y:auto;word-wrap:break-word;overflow-wrap:break-word;\">$1</div></div></details></div>\n",
+        "trimStrings": [],
+        "placement": [
+            2
+        ],
+        "disabled": false,
+        "markdownOnly": true,
+        "promptOnly": false,
+        "runOnEdit": false,
+        "substituteRegex": 1,
+        "minDepth": null,
+        "maxDepth": null
+    },
+    {
+        "id": "87275392-a519-4f60-af91-91cb66a6de73",
+        "scriptName": "世界运行报告美化",
+        "findRegex": "/<wlog time=\"(.*?)\">\\s*([\\s\\S]*?)\\s*<\\/wlog>\\s*/gi",
+        "replaceString": "\n<div style=\"text-align:center;margin:4px 0;\"><details style=\"text-align:center;width:100%;display:inline-block;\"><summary style=\"display:inline-flex;align-items:center;gap:6px;padding:5px 16px 5px 8px;border-radius:50px;background:radial-gradient(circle at 20% 40%,#2a1050,#0d0020);border:1.5px solid rgba(136,136,136,0.5);cursor:pointer;list-style:none;font-size:0.9em;user-select:none;animation:floatBob 2.5s ease-in-out 0.15s infinite;box-shadow:0 0 8px rgba(136,136,136,0.3);color:#d3d3d3;font-family:monospace;letter-spacing:0.5px;\"><span style=\"font-size:1.2em;animation:glitchEmoji 3s 0.5s infinite;\">🌍</span><span style=\"font-size:0.9em;opacity:0.7;\">世界运行报告</span><span style=\"font-size:0.65em;opacity:0.75;margin-left:4px;\">$1</span></summary><div style=\"margin-top:6px;text-align:left;padding:2px;border-radius:10px;background:linear-gradient(270deg,#0a0a0a,#666666,#aaaaaa,#666666,#0a0a0a);background-size:400% 400%;animation:pulseFlow 4s ease-in-out infinite,fadeSlideIn 0.4s ease-out;box-sizing:border-box;overflow:hidden;\"><div style=\"border-radius:9px;background:radial-gradient(ellipse at center,#222222,#0a0a0a);color:#d3d3d3;padding:15px;font-size:0.85em;line-height:1.7;font-family:sans-serif;white-space:pre-wrap;max-height:220px;overflow-y:auto;word-wrap:break-word;overflow-wrap:break-word;\">$2</div></div></details></div>\n",
+        "trimStrings": [],
+        "placement": [
+            2
+        ],
+        "disabled": false,
+        "markdownOnly": true,
+        "promptOnly": false,
+        "runOnEdit": false,
+        "substituteRegex": 1,
+        "minDepth": null,
+        "maxDepth": 5
+    },
+    {
+        "id": "ad53b5a9-c902-4f55-9f95-bc694edc53c8",
+        "scriptName": "玩家状态栏美化",
+        "findRegex": "/<status>\\s*([\\s\\S]*?)\\s*<\\/status>\\s*/gi",
+        "replaceString": "\n<div style=\"text-align:center;margin:4px 0;\"><details style=\"text-align:center;width:100%;display:inline-block;\"><summary style=\"display:inline-flex;align-items:center;gap:6px;padding:5px 16px 5px 8px;border-radius:50px;background:radial-gradient(circle at 20% 40%,#2a1050,#0d0020);border:1.5px solid rgba(136,68,255,0.5);cursor:pointer;list-style:none;font-size:0.9em;user-select:none;animation:floatBob 2.5s ease-in-out 0.3s infinite;box-shadow:0 0 8px rgba(136,68,255,0.3);color:#e6e6fa;font-family:monospace;letter-spacing:0.5px;\"><span style=\"font-size:1.2em;animation:glitchEmoji 3s 1s infinite;\">📜</span><span style=\"font-size:0.9em;opacity:0.7;\">玩家状态栏</span></summary><div style=\"margin-top:6px;text-align:left;padding:2px;border-radius:10px;background:linear-gradient(270deg,#0a001a,#8844ff,#00cccc,#8844ff,#0a001a);background-size:400% 400%;animation:pulseFlow 4s ease-in-out infinite,fadeSlideIn 0.4s ease-out;box-sizing:border-box;overflow:hidden;\"><div style=\"border-radius:9px;background:radial-gradient(ellipse at center,#120828,#08001a);color:#e6e6fa;padding:15px;font-size:0.85em;line-height:1.7;font-family:sans-serif;white-space:pre-wrap;max-height:220px;overflow-y:auto;word-wrap:break-word;overflow-wrap:break-word;\">$1</div></div></details></div>\n",
+        "trimStrings": [],
+        "placement": [
+            2
+        ],
+        "disabled": false,
+        "markdownOnly": true,
+        "promptOnly": false,
+        "runOnEdit": false,
+        "substituteRegex": 1,
+        "minDepth": null,
+        "maxDepth": 5
+    },
+    {
+        "id": "edb4f4de-c9c8-43df-ac66-059d1f8a74dc",
+        "scriptName": "角色好感度美化",
+        "findRegex": "/<affinity>\\s*([\\s\\S]*?)\\s*<\\/affinity>\\s*/gi",
+        "replaceString": "\n<div style=\"text-align:center;margin:4px 0;\"><details style=\"text-align:center;width:100%;display:inline-block;\"><summary style=\"display:inline-flex;align-items:center;gap:6px;padding:5px 16px 5px 8px;border-radius:50px;background:radial-gradient(circle at 20% 40%,#2a1050,#0d0020);border:1.5px solid rgba(255,68,136,0.5);cursor:pointer;list-style:none;font-size:0.9em;user-select:none;animation:floatBob 2.5s ease-in-out 0.45s infinite;box-shadow:0 0 8px rgba(255,68,136,0.3);color:#ffccdd;font-family:monospace;letter-spacing:0.5px;\"><span style=\"font-size:1.2em;animation:glitchEmoji 3s 1.5s infinite;\">💞</span><span style=\"font-size:0.9em;opacity:0.7;\">角色好感度</span></summary><div style=\"margin-top:6px;text-align:left;padding:2px;border-radius:10px;background:linear-gradient(270deg,#1a000a,#ff4488,#ff88cc,#ff4488,#1a000a);background-size:400% 400%;animation:pulseFlow 4s ease-in-out infinite,fadeSlideIn 0.4s ease-out;box-sizing:border-box;overflow:hidden;\"><div style=\"border-radius:9px;background:radial-gradient(ellipse at center,#1a0810,#0a0008);color:#ffccdd;padding:15px;font-size:0.85em;line-height:1.7;font-family:sans-serif;white-space:pre-wrap;max-height:220px;overflow-y:auto;word-wrap:break-word;overflow-wrap:break-word;\">$1</div></div></details></div>\n",
+        "trimStrings": [],
+        "placement": [
+            2
+        ],
+        "disabled": false,
+        "markdownOnly": true,
+        "promptOnly": false,
+        "runOnEdit": false,
+        "substituteRegex": 1,
+        "minDepth": null,
+        "maxDepth": 5
+    },
+    {
+        "id": "2a40a9aa-2050-4a92-8b48-550a468dfa95",
+        "scriptName": "NPC小剧场美化",
+        "findRegex": "/<npc_log>\\s*([\\s\\S]*?)\\s*<\\/npc_log>\\s*/gi",
+        "replaceString": "\n<div style=\"text-align:center;margin:4px 0;\"><details style=\"text-align:center;width:100%;display:inline-block;\"><summary style=\"display:inline-flex;align-items:center;gap:6px;padding:5px 16px 5px 8px;border-radius:50px;background:radial-gradient(circle at 20% 40%,#2a1050,#0d0020);border:1.5px solid rgba(0,180,200,0.5);cursor:pointer;list-style:none;font-size:0.9em;user-select:none;animation:floatBob 2.5s ease-in-out 0.6s infinite;box-shadow:0 0 8px rgba(0,180,200,0.3);color:#b0e8ef;font-family:monospace;letter-spacing:0.5px;\"><span style=\"font-size:1.2em;animation:glitchEmoji 3s 2s infinite;\">🪩</span><span style=\"font-size:0.9em;opacity:0.7;\">NPC小剧场</span></summary><div style=\"margin-top:6px;text-align:left;padding:2px;border-radius:10px;background:linear-gradient(270deg,#000a0a,#00888a,#00cccc,#00888a,#000a0a);background-size:400% 400%;animation:pulseFlow 4s ease-in-out infinite,fadeSlideIn 0.4s ease-out;box-sizing:border-box;overflow:hidden;\"><div style=\"border-radius:9px;background:radial-gradient(ellipse at center,#0e2828,#000a0a);color:#b0e8ef;padding:15px;font-size:0.85em;line-height:1.7;font-family:sans-serif;white-space:pre-wrap;max-height:220px;overflow-y:auto;word-wrap:break-word;overflow-wrap:break-word;\">$1</div></div></details></div>\n",
+        "trimStrings": [],
+        "placement": [
+            2
+        ],
+        "disabled": false,
+        "markdownOnly": true,
+        "promptOnly": false,
+        "runOnEdit": false,
+        "substituteRegex": 0,
+        "minDepth": null,
+        "maxDepth": 5
+    },
+    {
+        "id": "25d2ab83-99f4-4280-91b3-12c7f3bbacaa",
+        "scriptName": "5️⃣",
+        "findRegex": "",
+        "replaceString": "",
+        "trimStrings": [],
+        "placement": [
+            2
+        ],
+        "disabled": true,
+        "markdownOnly": true,
+        "promptOnly": false,
+        "runOnEdit": false,
+        "substituteRegex": 0,
+        "minDepth": null,
+        "maxDepth": null
+    },
+    {
+        "id": "b8bcd9ce-4f34-47cc-a202-94d42ad5196e",
+        "scriptName": "定位美化",
+        "findRegex": "/<locator>\\s*([\\s\\S]*?)\\s*<\\/locator>/gi",
+        "replaceString": "\n<div class=\"locator-capsules\" style=\"margin:10px 0;display:flex;flex-direction:column;align-items:flex-start;gap:8px;font-size:0.75em;\"><div class=\"locator-source\" hidden>$1</div></div><script>(function(){var script=document.currentScript;var root=script&&script.previousElementSibling;if(!root||!root.classList.contains('locator-capsules')){var all=document.querySelectorAll('.locator-capsules');root=all[all.length-1];}if(!root)return;var source=root.querySelector('.locator-source');if(!source)return;var lines=source.textContent.split(/\\r?\\n/).map(function(line){return line.trim();}).filter(function(line){return line.length>0;});lines.forEach(function(line){var text=line.replace(/^📅\\uFE0F?\\s*时间\\s*[:：]\\s*/,'📅 ').replace(/^📍\\uFE0F?\\s*地点\\s*[:：]\\s*/,'📍 ');var capsule=document.createElement('span');capsule.style.cssText='padding:4px 10px;background:rgba(100,100,100,0.12);border-radius:9999px;border:1px solid rgba(120,120,120,0.2);max-width:100%;box-sizing:border-box;overflow-wrap:anywhere;';capsule.textContent=text;root.appendChild(capsule);});source.remove();})();</script>\n",
+        "trimStrings": [],
+        "placement": [
+            2
+        ],
+        "disabled": false,
+        "markdownOnly": true,
+        "promptOnly": false,
+        "runOnEdit": false,
+        "substituteRegex": 0,
+        "minDepth": null,
+        "maxDepth": null
+    },
+    {
+        "id": "e38caa9b-912c-4890-9dbb-1e425b5f8145",
+        "scriptName": "平行线美化",
+        "findRegex": "/(?=\\s*<(?:parallel_line_drive|parallel_line)>)\\s*(?:<parallel_line_drive>\\s*([\\s\\S]*?)\\s*<\\/parallel_line_drive>)?\\s*(?:<parallel_line>\\s*([\\s\\S]*?)\\s*<\\/parallel_line>)?/gi",
+        "replaceString": "\n<style>@keyframes detailFlowA{0%{background-position:0% 50%}100%{background-position:200% 50%}}@keyframes detailSheepGlitchA{0%{text-shadow:0 0 0 transparent}2%{text-shadow:2px 0 #ff00ff,-2px 0 #00ffff}4%{text-shadow:0 0 0 transparent}30%{text-shadow:0 0 0 transparent}32%{text-shadow:-2px 0 #ff00ff,2px 0 #00ffff}34%{text-shadow:0 0 0 transparent}100%{text-shadow:0 0 0 transparent}}@keyframes detailPanelGlow{0%{box-shadow:0 0 15px rgba(136,68,255,0.15)}50%{box-shadow:0 0 30px rgba(136,68,255,0.25),0 0 50px rgba(0,255,255,0.05)}100%{box-shadow:0 0 15px rgba(136,68,255,0.15)}}@keyframes gearSpinSmooth{100%{transform:rotate(360deg)}}.sheep-parallel-text{white-space:pre-wrap;line-height:inherit;}.sheep-parallel-text:has(.sheep-bilingual){white-space:normal;}.sheep-parallel-text .sheep-bilingual{white-space:normal;line-height:inherit;}.sheep-parallel-text>.sheep-bilingual:first-child{margin-top:0!important;}.sheep-parallel-text>.sheep-bilingual:last-child{margin-bottom:0!important;}.sheep-parallel-text:has(.sheep-bilingual)>br{display:none;}.sheep-parallel-text:has(.sheep-bilingual)>p{margin:0;}</style><div style=\"margin:12px 0;border-radius:8px;overflow:hidden;animation:detailPanelGlow 4s ease-in-out infinite;\"><div style=\"height:1px;background:linear-gradient(90deg,transparent,#8844ff55,#00cccc44,#8844ff55,transparent);background-size:200% 100%;animation:detailFlowA 4s linear infinite;box-shadow:0 1px 4px rgba(136,68,255,0.15);\"></div><details style=\"background:linear-gradient(160deg,#0d0020,#1a0a35,#08001a);\"><summary style=\"list-style:none;cursor:pointer;display:flex;align-items:center;gap:6px;padding:8px 14px;border-bottom:1px solid rgba(136,68,255,0.12);color:#dcd4f0;font-weight:bold;\"><span style=\"animation:detailSheepGlitchA 3s infinite;font-size:0.9em;\">🐑</span><span>平行线事件 [点击查看]</span></summary><div style=\"padding:14px 16px;color:#dcd4f0;font-size:inherit;line-height:inherit;white-space:normal;word-wrap:break-word;text-shadow:0 0 3px rgba(136,68,255,0.1);\"><details style=\"margin-bottom:12px;\"><summary style=\"list-style:none;cursor:pointer;display:inline-flex;align-items:center;gap:6px;padding:4px 12px;background:rgba(136,68,255,0.15);border:1px solid rgba(136,68,255,0.3);border-radius:20px;color:#dcd4f0;font-size:0.8em;transition:all 0.2s;\" onmouseover=\"this.style.background='rgba(136,68,255,0.25)'\" onmouseout=\"this.style.background='rgba(136,68,255,0.15)'\"><span style=\"display:inline-block;animation:gearSpinSmooth 4s linear infinite;transform-origin:center center;\">⚙️</span><span>平行线驱动</span></summary><div style=\"margin-top:8px;padding:12px;background:rgba(0,0,0,0.4);border-radius:0 8px 8px 8px;border-left:2px solid rgba(136,68,255,0.4);color:#e2daeb;font-size:0.85em;line-height:1.5;white-space:pre-wrap;word-wrap:break-word;\">$1</div></details><div class=\"sheep-parallel-text\">$2</div></div></details><div style=\"height:1px;background:linear-gradient(90deg,transparent,#8844ff55,#00cccc44,#8844ff55,transparent);background-size:200% 100%;animation:detailFlowA 4s linear infinite;box-shadow:0 -1px 4px rgba(136,68,255,0.15);\"></div></div>\n",
+        "trimStrings": [],
+        "placement": [
+            2
+        ],
+        "disabled": false,
+        "markdownOnly": true,
+        "promptOnly": false,
+        "runOnEdit": false,
+        "substituteRegex": 1,
+        "minDepth": null,
+        "maxDepth": 5
+    },
+    {
+        "id": "0dcd851a-847d-4ff0-91a7-957b9d7026ec",
+        "scriptName": "选项美化-SillyTavern",
+        "findRegex": "/<selection>((?:(?!<selection>)[\\s\\S])*?)<\\/selection>/",
+        "replaceString": "\n```html\n<!DOCTYPE html>\n<html lang=\"zh-CN\">\n<head>\n<meta charset=\"UTF-8\">\n<meta name=\"viewport\" content=\"width=device-width,initial-scale=1.0\">\n<title>选项</title>\n<style>\n*{margin:0;padding:0;box-sizing:border-box;}\nhtml,body{background:transparent;height:auto;min-height:0;overflow:hidden;}\nbody{padding:6px;font-family:sans-serif;}\n\n@keyframes hjm-flow{from{background-position:50% 100%}to{background-position:50% 0%}}\n@keyframes hjm-title-glow{0%,100%{text-shadow:0 0 8px rgba(136,68,255,0.3),0 0 16px rgba(0,255,255,0.1),1px 1px 2px #000}50%{text-shadow:0 0 16px rgba(136,68,255,0.5),0 0 32px rgba(0,255,255,0.2),1px 1px 2px #000}}\n@keyframes hjm-flash{0%{opacity:0;transform:translateY(-50%) scale(0.8)}20%{opacity:1;transform:translateY(-50%) scale(1)}70%{opacity:1}100%{opacity:0;transform:translateY(-50%) scale(0.9)}}\n@keyframes hjm-cap-flow{0%,100%{background-position:0% 50%}50%{background-position:100% 50%}}\n@keyframes hjm-sheep-glitch{0%{text-shadow:0 0 0 transparent}2%{text-shadow:2px 0 #ff00ff,-2px 0 #00ffff}4%{text-shadow:0 0 0 transparent}30%{text-shadow:0 0 0 transparent}32%{text-shadow:-2px 0 #ff00ff,2px 0 #00ffff}34%{text-shadow:0 0 0 transparent}100%{text-shadow:0 0 0 transparent}}\n\n.hjm-box{position:relative;border:1px solid #3d3d3d;background-color:#1a0a28;padding:12px 15px 12px 18px;border-radius:10px;color:#e6e6fa;font-size:0.9em;line-height:1.6;box-shadow:inset 0 0 10px rgba(0,0,0,0.4),0 2px 5px rgba(0,0,0,0.3),0 0 12px rgba(136,68,255,0.15);margin:0;}\n.hjm-box::before{content:\"\";position:absolute;left:0;top:0;bottom:0;width:5px;border-radius:10px 0 0 10px;background:linear-gradient(180deg,#8844ff,#00cccc,#8844ff,#00cccc,#8844ff);background-size:100% 200%;animation:hjm-flow 4s linear infinite;}\n.hjm-title{color:#c0a0ff;font-weight:bold;font-size:1.05em;letter-spacing:0.5px;margin-bottom:8px;display:block;animation:hjm-title-glow 3s ease-in-out infinite;}\n.hjm-title .hjm-sheep{display:inline-block;animation:hjm-sheep-glitch 3s infinite;margin-right:4px;font-size:0.95em;}\n\n.hjm-list{display:flex;flex-direction:column;gap:6px;max-height:200px;overflow-y:auto;padding-right:4px;}\n.hjm-list::-webkit-scrollbar{width:5px;}\n.hjm-list::-webkit-scrollbar-track{background:rgba(136,68,255,0.08);border-radius:3px;}\n.hjm-list::-webkit-scrollbar-thumb{background:linear-gradient(180deg,#8844ff,#00cccc);border-radius:3px;}\n\n.hjm-c-btn{position:relative;border:1px solid #3d3d3d;background-color:#150820;padding:8px 12px 8px 15px;border-radius:4px;color:#e6e6fa;font-family:inherit;font-size:1em;line-height:1.6;cursor:pointer;text-align:left;white-space:normal;word-break:break-word;transition:background-color 0.2s,transform 0.1s,box-shadow 0.2s;outline:none;box-shadow:inset 0 0 6px rgba(0,0,0,0.4);overflow:hidden;flex-shrink:0;}\n.hjm-c-btn::before{content:\"\";position:absolute;left:0;top:0;bottom:0;width:3px;background:linear-gradient(180deg,#8844ff,#00cccc,#8844ff,#00cccc,#8844ff);background-size:100% 200%;animation:hjm-flow 4s linear infinite;}\n.hjm-c-btn:hover{background-color:#1f1035;box-shadow:inset 0 0 6px rgba(0,0,0,0.4),0 0 10px rgba(136,68,255,0.25);}\n.hjm-c-btn:active{transform:scale(0.98);}\n.hjm-c-btn .hjm-arrow{color:#c0a0ff;font-weight:bold;text-shadow:0 0 6px rgba(136,68,255,0.4),1px 1px 2px #000;margin-right:6px;font-size:0.9em;pointer-events:none;}\n.hjm-c-btn .hjm-txt{text-shadow:1px 1px 1.5px rgba(0,0,0,0.9);letter-spacing:0.5px;pointer-events:none;}\n.hjm-c-btn b{color:#c0a0ff;margin-right:4px;pointer-events:none;font-weight:bold;text-shadow:0 0 6px rgba(136,68,255,0.4),1px 1px 2px #000;}\n.hjm-cap{position:absolute;right:6px;top:50%;transform:translateY(-50%);background:linear-gradient(90deg,#8844ff,#00cccc,#8844ff);background-size:200% auto;animation:hjm-cap-flow 3s ease-in-out infinite,hjm-flash 0.8s forwards;color:#0a001a;font-size:9px;font-weight:bold;padding:2px 6px;border-radius:8px;opacity:0;box-shadow:0 2px 4px rgba(0,0,0,0.4),0 0 8px rgba(136,68,255,0.4);pointer-events:none;}\n</style>\n</head>\n<body>\n\n<div class=\"hjm-box\" id=\"hjm-box-mini\">\n  <span class=\"hjm-title\"><span class=\"hjm-sheep\">🐑</span>请选择下一步行动</span>\n  <div class=\"hjm-list\" id=\"hjm-opt-ctn-mini\"></div>\n</div>\n<textarea id=\"hjm-raw-mini\" style=\"display:none;\">$1</textarea>\n\n<script>\nfunction hjmSend(text) {\n  try {\n    if (window.parent && typeof window.parent.triggerSlash === 'function') {\n      window.parent.triggerSlash('/send ' + text + '|/trigger');\n      return;\n    }\n  } catch(e) {}\n  try {\n    const ta = window.parent.document.querySelector('#send_textarea');\n    if (ta) {\n      const cur = ta.value;\n      ta.value = cur && cur.trim() !== '' ? (cur.includes(text) ? cur : cur + '\\n' + text) : text;\n      ta.dispatchEvent(new Event('input', { bubbles: true }));\n      ta.focus();\n      return;\n    }\n  } catch(e) {}\n  try {\n    window.parent.postMessage({ type: 'sendChat', text: text }, '*');\n  } catch(e) {}\n}\n\nfunction hjmCp(el) {\n  const s = el.querySelector('.hjm-txt');\n  if (!s) return;\n  hjmSend(s.innerText);\n  if (!el.querySelector('.hjm-cap')) {\n    const c2 = document.createElement('div');\n    c2.className = 'hjm-cap';\n    c2.innerText = '✨已选择';\n    el.appendChild(c2);\n    setTimeout(() => c2.remove(), 800);\n  }\n}\n\n(function(){\n  const r = document.getElementById('hjm-raw-mini');\n  const c = document.getElementById('hjm-opt-ctn-mini');\n  if (!r || !c) return;\n  const rawData = r.value || r.textContent || '';\n  const ls = rawData.trim().split(/\\r?\\n/).filter(e => e.trim() !== '');\n  ls.forEach(l => {\n    const m = l.trim().match(/^([A-Z])\\.\\s*(.*)/i);\n    if (m) {\n      const d = document.createElement('div');\n      d.className = 'hjm-c-btn';\n      d.setAttribute('onclick', 'hjmCp(this)');\n      let txt = m[2]\n        .replace(/<q[^>]*>/gi, '\"')\n        .replace(/<\\/q>/gi, '\"')\n        .replace(/<em[^>]*>/gi, '（')\n        .replace(/<\\/em>/gi, '）')\n        .replace(/&quot;/gi, '\"')\n        .replace(/<[^>]+>/g, '');\n      d.innerHTML = '<span class=\"hjm-arrow\">➤</span><b>' + m[1].toUpperCase() + '.</b><span class=\"hjm-txt\"></span>';\n      d.querySelector('.hjm-txt').textContent = txt;\n      c.appendChild(d);\n    }\n  });\n  updateIframeHeight();\n})();\n\nfunction updateIframeHeight() {\n  const h = document.documentElement.scrollHeight || document.body.scrollHeight;\n  if (window.parent && window.parent !== window) {\n    try { window.parent.postMessage({ type: 'resizeIframe', height: h }, '*'); } catch(e) {}\n  }\n}\nwindow.addEventListener('load', updateIframeHeight);\nwindow.addEventListener('resize', updateIframeHeight);\n</script>\n\n</body>\n</html>\n```\n",
+        "trimStrings": [],
+        "placement": [
+            2
+        ],
+        "disabled": false,
+        "markdownOnly": true,
+        "promptOnly": false,
+        "runOnEdit": false,
+        "substituteRegex": 0,
+        "minDepth": null,
+        "maxDepth": 5
+    },
+    {
+        "id": "00eec6f1-7716-4fb3-87f3-9393f7be7cd5",
+        "scriptName": "选项美化-非SillyTavern",
+        "findRegex": "/<selection>((?:(?!<selection>)[\\s\\S])*?)<\\/selection>/",
+        "replaceString": "\n<style>\n@keyframes hjm-flow{from{background-position:50% 100%}to{background-position:50% 0%}}\n@keyframes hjm-title-glow{0%,100%{text-shadow:0 0 8px rgba(136,68,255,0.3),0 0 16px rgba(0,255,255,0.1),1px 1px 2px #000}50%{text-shadow:0 0 16px rgba(136,68,255,0.5),0 0 32px rgba(0,255,255,0.2),1px 1px 2px #000}}\n@keyframes hjm-flash{0%{opacity:0;transform:translateY(-50%) scale(0.8)}20%{opacity:1;transform:translateY(-50%) scale(1)}70%{opacity:1}100%{opacity:0;transform:translateY(-50%) scale(0.9)}}\n@keyframes hjm-cap-flow{0%,100%{background-position:0% 50%}50%{background-position:100% 50%}}\n@keyframes hjm-sheep-glitch{0%{text-shadow:0 0 0 transparent}2%{text-shadow:2px 0 #ff00ff,-2px 0 #00ffff}4%{text-shadow:0 0 0 transparent}30%{text-shadow:0 0 0 transparent}32%{text-shadow:-2px 0 #ff00ff,2px 0 #00ffff}34%{text-shadow:0 0 0 transparent}100%{text-shadow:0 0 0 transparent}}\n.hjm-box{position:relative;border:1px solid #3d3d3d;background-color:#1a0a28;padding:12px 15px 12px 18px;border-radius:10px;color:#e6e6fa;font-size:0.9em;line-height:1.6;font-family:sans-serif;box-shadow:inset 0 0 10px rgba(0,0,0,0.4),0 2px 5px rgba(0,0,0,0.3),0 0 12px rgba(136,68,255,0.15);margin:6px 0;}\n.hjm-box::before{content:\"\";position:absolute;left:0;top:0;bottom:0;width:5px;border-radius:10px 0 0 10px;background:linear-gradient(180deg,#8844ff,#00cccc,#8844ff,#00cccc,#8844ff);background-size:100% 200%;animation:hjm-flow 4s linear infinite;}\n.hjm-title{color:#c0a0ff;font-weight:bold;font-size:1.05em;letter-spacing:0.5px;margin-bottom:8px;display:block;animation:hjm-title-glow 3s ease-in-out infinite;}\n.hjm-title .hjm-sheep{display:inline-block;animation:hjm-sheep-glitch 3s infinite;margin-right:4px;font-size:0.95em;}\n.hjm-list{display:flex;flex-direction:column;gap:6px;max-height:200px;overflow-y:auto;overflow-x:hidden;padding-right:6px;scrollbar-width:thin;scrollbar-color:#8844ff #1a0a28;}\n.hjm-list::-webkit-scrollbar{width:6px;}\n.hjm-list::-webkit-scrollbar-track{background:rgba(136,68,255,0.08);border-radius:3px;}\n.hjm-list::-webkit-scrollbar-thumb{background:linear-gradient(180deg,#8844ff,#00cccc);border-radius:3px;}\n.hjm-list::-webkit-scrollbar-thumb:hover{background:linear-gradient(180deg,#a060ff,#22ddee);}\n.hjm-c-btn{position:relative;border:1px solid #3d3d3d;background-color:#150820;padding:8px 12px 8px 15px;border-radius:9px;color:#e6e6fa;font-family:inherit;font-size:1em;line-height:1.6;cursor:pointer;text-align:left;white-space:normal;word-break:break-word;transition:background-color 0.2s,transform 0.1s,box-shadow 0.2s;outline:none;box-shadow:inset 0 0 6px rgba(0,0,0,0.4);overflow:hidden;flex-shrink:0;}\n.hjm-c-btn::before{content:\"\";position:absolute;left:0;top:0;bottom:0;width:3px;background:linear-gradient(180deg,#8844ff,#00cccc,#8844ff,#00cccc,#8844ff);background-size:100% 200%;animation:hjm-flow 4s linear infinite;}\n.hjm-c-btn:hover{background-color:#1f1035;box-shadow:inset 0 0 6px rgba(0,0,0,0.4),0 0 10px rgba(136,68,255,0.25);}\n.hjm-c-btn:active{transform:scale(0.98);}\n.hjm-c-btn .hjm-arrow{color:#c0a0ff;font-weight:bold;text-shadow:0 0 6px rgba(136,68,255,0.4),1px 1px 2px #000;margin-right:6px;font-size:0.9em;pointer-events:none;}\n.hjm-c-btn .hjm-txt{text-shadow:1px 1px 1.5px rgba(0,0,0,0.9);letter-spacing:0.5px;pointer-events:none;}\n.hjm-c-btn b{color:#c0a0ff;margin-right:4px;pointer-events:none;font-weight:bold;text-shadow:0 0 6px rgba(136,68,255,0.4),1px 1px 2px #000;}\n.hjm-cap{position:absolute;right:6px;top:50%;transform:translateY(-50%);background:linear-gradient(90deg,#8844ff,#00cccc,#8844ff);background-size:200% auto;animation:hjm-cap-flow 3s ease-in-out infinite,hjm-flash 0.8s forwards;color:#0a001a;font-size:9px;font-weight:bold;padding:2px 6px;border-radius:8px;opacity:0;box-shadow:0 2px 4px rgba(0,0,0,0.4),0 0 8px rgba(136,68,255,0.4);pointer-events:none;}\n</style>\n\n<div class=\"hjm-box\" id=\"hjm-box-mini\">\n  <span class=\"hjm-title\"><span class=\"hjm-sheep\">🐑</span>请选择下一步行动</span>\n  <div class=\"hjm-list\" id=\"hjm-opt-ctn-mini\"></div>\n</div>\n<textarea id=\"hjm-raw-mini\" style=\"display:none;\">$1</textarea>\n\n<script>\nfunction hjmCp(el) {\n  const s = el.querySelector('.hjm-txt');\n  if(!s) return;\n  try {\n    let c = \"/send \" + s.innerText;\n    if(typeof window.parent !== 'undefined' && typeof window.parent.triggerSlash === 'function') {\n      window.parent.triggerSlash(c);\n    } else if(typeof triggerSlash === 'function') {\n      triggerSlash(c);\n    }\n  } catch(e) {}\n  if(!el.querySelector('.hjm-cap')) {\n    const c2 = document.createElement('div');\n    c2.className = 'hjm-cap';\n    c2.innerText = '✨已选择';\n    el.appendChild(c2);\n    setTimeout(() => c2.remove(), 800);\n  }\n}\n(function(){\n  const r = document.getElementById('hjm-raw-mini');\n  const c = document.getElementById('hjm-opt-ctn-mini');\n  if(!r || !c) return;\n  const rawData = r.value || r.textContent || '';\n  const ls = rawData.trim().split(/\\r?\\n/).filter(e => e.trim() !== '');\n  ls.forEach(l => {\n    const m = l.trim().match(/^([A-Z])\\.\\s*(.*)/i);\n    if(m) {\n      const d = document.createElement('div');\n      d.className = 'hjm-c-btn';\n      d.setAttribute('onclick', 'hjmCp(this)');\n      let txt = m[2]\n        .replace(/<q[^>]*>/gi, '\"')\n        .replace(/<\\/q>/gi, '\"')\n        .replace(/<em[^>]*>/gi, '（')\n        .replace(/<\\/em>/gi, '）')\n        .replace(/&quot;/gi, '\"')\n        .replace(/<[^>]+>/g, '');\n      d.innerHTML = '<span class=\"hjm-arrow\">➤</span><b>' + m[1].toUpperCase() + '.</b><span class=\"hjm-txt\"></span>';\n      d.querySelector('.hjm-txt').textContent = txt;\n      c.appendChild(d);\n    }\n  });\n})();\n</script>\n",
+        "trimStrings": [],
+        "placement": [
+            2
+        ],
+        "disabled": true,
+        "markdownOnly": true,
+        "promptOnly": false,
+        "runOnEdit": false,
+        "substituteRegex": 0,
+        "minDepth": null,
+        "maxDepth": 5
+    },
+    {
+        "id": "d9d4ce85-5eb8-4421-97a0-ab22ecfffb00",
+        "scriptName": "***符号转分行",
+        "findRegex": "/\\s*\\*\\*\\*\\s*/g",
+        "replaceString": "<hr style=\"border:0; border-top:1px dashed #666; margin:8px 0;\">",
+        "trimStrings": [],
+        "placement": [
+            2
+        ],
+        "disabled": false,
+        "markdownOnly": true,
+        "promptOnly": false,
+        "runOnEdit": false,
+        "substituteRegex": 0,
+        "minDepth": null,
+        "maxDepth": 5
+    },
+    {
+        "id": "c648d8b2-9e51-4d76-8b04-7c6f3297a8cd",
+        "scriptName": "⬇️清理",
+        "findRegex": "",
+        "replaceString": "",
+        "trimStrings": [],
+        "placement": [
+            2
+        ],
+        "disabled": true,
+        "markdownOnly": true,
+        "promptOnly": false,
+        "runOnEdit": false,
+        "substituteRegex": 0,
+        "minDepth": null,
+        "maxDepth": null
+    },
+    {
+        "id": "4fd31819-e0b6-44f1-ad86-1eec7954e6c6",
+        "scriptName": "清理开场白",
+        "findRegex": "/<opening>[\\s\\S]*?<\\/opening>/g",
+        "replaceString": "",
+        "trimStrings": [],
+        "placement": [
+            2
+        ],
+        "disabled": false,
+        "markdownOnly": false,
+        "promptOnly": true,
+        "runOnEdit": false,
+        "substituteRegex": 0,
+        "minDepth": 2,
+        "maxDepth": null
+    },
+    {
+        "id": "01d49e12-a66b-4d82-a758-138e84a34545",
+        "scriptName": "清空玩家输入历史记录",
+        "findRegex": "^[\\s\\S]*$",
+        "replaceString": "",
+        "trimStrings": [],
+        "placement": [
+            1
+        ],
+        "disabled": false,
+        "markdownOnly": false,
+        "promptOnly": true,
+        "runOnEdit": false,
+        "substituteRegex": 0,
+        "minDepth": 2,
+        "maxDepth": null
+    },
+    {
+        "id": "5c4d8cb2-b644-4486-9290-6f2ab8e9c0f4",
+        "scriptName": "清理防截断内容",
+        "findRegex": "<secure_log>[\\s\\S]*?<\\/secure_log>",
+        "replaceString": "",
+        "trimStrings": [],
+        "placement": [
+            2
+        ],
+        "disabled": false,
+        "markdownOnly": true,
+        "promptOnly": true,
+        "runOnEdit": false,
+        "substituteRegex": 1,
+        "minDepth": null,
+        "maxDepth": null
+    },
+    {
+        "id": "96b65f21-8655-40ef-8bbc-fb7348176ef1",
+        "scriptName": "⬇️不发送",
+        "findRegex": "",
+        "replaceString": "",
+        "trimStrings": [],
+        "placement": [
+            2
+        ],
+        "disabled": true,
+        "markdownOnly": true,
+        "promptOnly": false,
+        "runOnEdit": false,
+        "substituteRegex": 0,
+        "minDepth": null,
+        "maxDepth": null
+    },
+    {
+        "id": "af223a45-90a6-4595-b2dd-8267deca01b3",
+        "scriptName": "不发送选项",
+        "findRegex": "/<selection>[\\s\\S]*?<\\/selection>/g",
+        "replaceString": "",
+        "trimStrings": [],
+        "placement": [
+            2
+        ],
+        "disabled": false,
+        "markdownOnly": false,
+        "promptOnly": true,
+        "runOnEdit": false,
+        "substituteRegex": 0,
+        "minDepth": null,
+        "maxDepth": null
+    },
+    {
+        "id": "6ffaba3c-5cec-4619-a43a-e19ae9eae999",
+        "scriptName": "不发送平行线",
+        "findRegex": "/<parallel_line_drive>([\\s\\S]*?)<\\/parallel_line_drive>\\s*<parallel_line>([\\s\\S]*?)<\\/parallel_line>|<parallel_line>([\\s\\S]*?)<\\/parallel_line>|<parallel_line_drive>([\\s\\S]*?)<\\/parallel_line_drive>/gi",
+        "replaceString": "",
+        "trimStrings": [],
+        "placement": [
+            2
+        ],
+        "disabled": false,
+        "markdownOnly": false,
+        "promptOnly": true,
+        "runOnEdit": false,
+        "substituteRegex": 0,
+        "minDepth": null,
+        "maxDepth": null
+    },
+    {
+        "id": "3dc859f8-309f-403d-9b8e-ccf1ed6c69d0",
+        "scriptName": "不发送小剧场",
+        "findRegex": "/<npc_log>[\\s\\S]*?<\\/npc_log>/g",
+        "replaceString": "",
+        "trimStrings": [],
+        "placement": [
+            2
+        ],
+        "disabled": false,
+        "markdownOnly": false,
+        "promptOnly": true,
+        "runOnEdit": false,
+        "substituteRegex": 0,
+        "minDepth": null,
+        "maxDepth": null
+    },
+    {
+        "id": "b98968ac-10b7-4393-adb5-5157a470e085",
+        "scriptName": "不发送当前故事思维链",
+        "findRegex": "/<story_driver>[\\s\\S]*?<\\/story_driver>/g",
+        "replaceString": "",
+        "trimStrings": [],
+        "placement": [
+            2
+        ],
+        "disabled": false,
+        "markdownOnly": false,
+        "promptOnly": true,
+        "runOnEdit": false,
+        "substituteRegex": 0,
+        "minDepth": null,
+        "maxDepth": null
+    },
+    {
+        "id": "909d8c9a-d9a9-4357-ad28-4f15eb25ca93",
+        "scriptName": "不发送当前NPC思维链",
+        "findRegex": "/<lore_search>[\\s\\S]*?<\\/lore_search>/g",
+        "replaceString": "",
+        "trimStrings": [],
+        "placement": [
+            2
+        ],
+        "disabled": true,
+        "markdownOnly": false,
+        "promptOnly": true,
+        "runOnEdit": false,
+        "substituteRegex": 0,
+        "minDepth": 0,
+        "maxDepth": null
+    },
+    {
+        "id": "f1e1c741-9ef7-47c1-88c8-c7722f45b6d3",
+        "scriptName": "不发送当前战斗思维链",
+        "findRegex": "/<combat_driver>[\\s\\S]*?<\\/combat_driver>/g",
+        "replaceString": "",
+        "trimStrings": [],
+        "placement": [
+            2
+        ],
+        "disabled": true,
+        "markdownOnly": false,
+        "promptOnly": true,
+        "runOnEdit": false,
+        "substituteRegex": 0,
+        "minDepth": 0,
+        "maxDepth": null
+    },
+    {
+        "id": "995a75aa-92ce-4c96-9984-3a8d5300070f",
+        "scriptName": "⬇️清理八股",
+        "findRegex": "",
+        "replaceString": "",
+        "trimStrings": [],
+        "placement": [
+            2
+        ],
+        "disabled": true,
+        "markdownOnly": true,
+        "promptOnly": false,
+        "runOnEdit": false,
+        "substituteRegex": 0,
+        "minDepth": null,
+        "maxDepth": null
+    },
+    {
+        "id": "2e5a701d-b122-438d-9a99-a0843202df15",
+        "scriptName": "清理常见八股(自填方式:在斜线包裹框内使用'|'分割开需要清理的关键词)",
+        "findRegex": "/极其|极度|病态的|病态|由于/g",
+        "replaceString": "",
+        "trimStrings": [],
+        "placement": [
+            2,
+            6
+        ],
+        "disabled": false,
+        "markdownOnly": true,
+        "promptOnly": true,
+        "runOnEdit": false,
+        "substituteRegex": 1,
+        "minDepth": null,
+        "maxDepth": null
+    },
+    {
+        "id": "895a5536-0af9-4ee8-82d5-6c48ac1b45df",
+        "scriptName": "清理茧子",
+        "findRegex": "/[老粗薄厚]?[的]?茧[子]?/g",
+        "replaceString": "痕迹",
+        "trimStrings": [],
+        "placement": [
+            2,
+            6
+        ],
+        "disabled": false,
+        "markdownOnly": true,
+        "promptOnly": true,
+        "runOnEdit": false,
+        "substituteRegex": 1,
+        "minDepth": null,
+        "maxDepth": null
+    },
+    {
+        "id": "92e6aefb-5fb4-42ca-98fc-9e3dd04396db",
+        "scriptName": "清理指头泛白",
+        "findRegex": "/[，,]?指[节尖甲][^，,。\\n]{0,10}泛白/g",
+        "replaceString": "",
+        "trimStrings": [],
+        "placement": [
+            2,
+            6
+        ],
+        "disabled": false,
+        "markdownOnly": true,
+        "promptOnly": true,
+        "runOnEdit": false,
+        "substituteRegex": 1,
+        "minDepth": null,
+        "maxDepth": null
+    },
+    {
+        "id": "7412d75d-2e13-44c4-b8fe-6ff32d31e524",
+        "scriptName": "清理比哭还难看",
+        "findRegex": "/比哭还难看/g",
+        "replaceString": "艰涩",
+        "trimStrings": [],
+        "placement": [
+            2,
+            6
+        ],
+        "disabled": false,
+        "markdownOnly": true,
+        "promptOnly": false,
+        "runOnEdit": false,
+        "substituteRegex": 0,
+        "minDepth": null,
+        "maxDepth": null
+    },
+    {
+        "id": "bd238c31-67a3-4275-a1cd-b25a81653e6b",
+        "scriptName": "清理废话修饰词",
+        "findRegex": "/(?:不自觉地|不由得|不由自主地|不受控制地|下意识地|本能地|不知不觉(?:地|间)?|悄然|无声地|默默地|莫名(?:地)?|无端(?:地)?|某种|生理性的?|冷冷地|淡淡地|凉凉地|带着[一几些][丝抹分许]+|不容置疑|不容置喙|不容拒绝|简短有力(?:地)?|不知何时|在这一刻|就在那一瞬|四肢百骸|细若蚊呐|蚊子哼哼|似乎|嘴角(?:微微)?(?:勾起|上扬|扬起|上挑)(?:(?:了)?(?:一[个丝抹])?(?:危险的|好看的|玩味的|意味不明的)?弧度)?|抿(?:了抿)?[唇嘴]|嘴唇紧紧(?:并拢|抿起))/g",
+        "replaceString": "",
+        "trimStrings": [],
+        "placement": [
+            2,
+            6
+        ],
+        "disabled": true,
+        "markdownOnly": true,
+        "promptOnly": true,
+        "runOnEdit": false,
+        "substituteRegex": 1,
+        "minDepth": null,
+        "maxDepth": null
+    },
+    {
+        "id": "b2fba137-c2fb-4a5c-b7d0-3b2400a8421e",
+        "scriptName": "清理动物比喻",
+        "findRegex": "/(?:[像如](?:同)?(?:一[只头条匹])?)?(?:受惊的|瑟缩的|无助的|可怜的|被捕获的|被囚禁的)?(?:雌兽|小兽|幼兽|困兽|猎物|金丝雀|小鹿|幼鸽|雏鸟|兔子|小猫|幼猫)(?:[般似]的|[一]样|[似]地)?/g",
+        "replaceString": "",
+        "trimStrings": [],
+        "placement": [
+            2,
+            6
+        ],
+        "disabled": true,
+        "markdownOnly": true,
+        "promptOnly": true,
+        "runOnEdit": false,
+        "substituteRegex": 1,
+        "minDepth": null,
+        "maxDepth": null
+    },
+    {
+        "id": "f9cacd3a-abf5-4c1b-bcc2-7fe6325a8d14",
+        "scriptName": "🐑",
+        "findRegex": "",
+        "replaceString": "",
+        "trimStrings": [],
+        "placement": [
+            2
+        ],
+        "disabled": true,
+        "markdownOnly": true,
+        "promptOnly": false,
+        "runOnEdit": false,
+        "substituteRegex": 0,
+        "minDepth": null,
+        "maxDepth": null
+    }
+]
