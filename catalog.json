@@ -1,5 +1,41 @@
 {
   "schemaVersion": 1,
   "presets": [],
-  "regex": []
+  "regex": [
+    {
+      "id": "miemie.preset.regex",
+      "version": "7.7",
+      "release": {
+        "id": 455816933,
+        "tag": "miemie-preset-regex-v7.7",
+        "url": "https://github.com/SheepSheepLab/MieMie-Presets/releases/tag/miemie-preset-regex-v7.7"
+      },
+      "variants": [
+        {
+          "id": "standard",
+          "name": "咩咩预设-专用正则-ver7.7",
+          "path": "regex/ver7.7/MieMiePreset-Regex-ver7.7.json",
+          "size": 81724,
+          "sha256": "7e2ab7851916b475cc882040937148680dc5cacdc88f8e4240e5508d398c5554",
+          "asset": {
+            "id": 784051355,
+            "name": "MieMiePreset-Regex-ver7.7.json",
+            "downloadUrl": "https://github.com/SheepSheepLab/MieMie-Presets/releases/download/miemie-preset-regex-v7.7/MieMiePreset-Regex-ver7.7.json"
+          }
+        },
+        {
+          "id": "large-font",
+          "name": "咩咩预设-专用正则-ver7.7-大字体版(PC端推荐)",
+          "path": "regex/ver7.7/MieMiePreset-Regex-ver7.7-LargeFont.json",
+          "size": 85184,
+          "sha256": "1ce5566c523c4a98514bfacc0b952f717709011133d2fcd3d202335f0b5fa32c",
+          "asset": {
+            "id": 784051338,
+            "name": "MieMiePreset-Regex-ver7.7-LargeFont.json",
+            "downloadUrl": "https://github.com/SheepSheepLab/MieMie-Presets/releases/download/miemie-preset-regex-v7.7/MieMiePreset-Regex-ver7.7-LargeFont.json"
+          }
+        }
+      ]
+    }
+  ]
 }
