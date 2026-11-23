@@ -15,15 +15,15 @@
 | 资源 | Resource ID | 版本 | Git Tag | Release Title | 正式文件名 |
 | --- | --- | --- | --- | --- | --- |
 | 预设本体 | `miemie.preset` | `X.X.X` | `miemie-preset-v<version>` | `MieMiePreset <version>` | `MieMiePreset-ver<version>.json` |
-| 配套正则 | `miemie.preset.regex` | `X.X` | `miemie-preset-regex-v<version>` | `MieMiePreset Regex <version>` | `MieMiePreset-Regex-ver<version>.json`、`MieMiePreset-Regex-ver<version>-LargeFont.json` |
+| 配套正则 | `miemie.preset.regex` | `X.X` | `miemie-preset-regex-v<version>` | `MieMiePreset Regex <version>` | `MieMiePreset-Regex-ver<version>.json`、`MieMiePreset-Regex-ver<version>-LargeFont.json`、`MieMiePreset-Regex-ver<version>-NonSillyTavern.json` |
 
-- 正式预设保存于 `presets/ver<version>/`，配套正则放在 `regex/ver<version>/`。正则特殊变体在版本号后追加 PascalCase 后缀，标准版沿用无后缀文件名。正则的两个变体共用版本、Tag、Release 和发行说明，各自记录附件。7.7 使用 `miemie-preset-regex-v7.7`、`MieMiePreset Regex 7.7`。
-- 获批准后，以经过验证的 Tag 建立草稿 Release，通过已授权的 GitHub 界面或 API 上传正式附件。核对标题、发行文案、两个附件的实际名称、ID、字节大小、下载地址及 SHA-256；必要时在草稿阶段经授权下载复核。若 GitHub 规范化名称且影响下载契约，停止并交 Owner 确认。
-- 草稿通过核验后公开 Release。随后匿名重新下载两个发布附件，校验与原件字节及 SHA-256 一致。仓库分支上的文件从推送时起即公开，独立报告其状态。正式发布后不静默替换附件。
+- 正式预设保存于 `presets/ver<version>/`，配套正则放在 `regex/ver<version>/`。正则特殊变体在版本号后追加 PascalCase 后缀，标准版沿用无后缀文件名。除表中列出的后缀外，其他变体的名称和后缀由 Owner 确认。经批准发行的同版本正则变体共用资源 ID、版本、Tag、Release 和发行说明，各自记录附件。7.7 实际发行标准版和大字体版两个变体，使用 `miemie-preset-regex-v7.7`、`MieMiePreset Regex 7.7`。
+- 获批准后，以经过验证的 Tag 建立草稿 Release，通过已授权的 GitHub 界面或 API 上传正式附件。核对标题、发行文案和该版本全部经批准的附件，逐一检查实际名称、ID、字节大小、下载地址及 SHA-256。必要时在草稿阶段经授权下载复核。若 GitHub 规范化名称且影响下载契约，停止并交 Owner 确认。
+- 草稿通过核验后公开 Release。随后匿名重新下载所有已发行变体的附件，逐一核对字节数和 SHA-256，并验证与原件逐字节一致。仓库分支上的文件从推送时起即公开，独立报告其状态。正式发布后不静默替换附件。
 
 ## 公开资源索引
 
-`catalog.json` 保留 `schemaVersion: 1` 及 `presets`、`regex` 两个数组。只有完成公开 Release 与附件回读的资源可登记。每个正则版本在 `regex` 中占一条记录。
+`catalog.json` 保留 `schemaVersion: 1` 及 `presets`、`regex` 两个数组。只有完成公开 Release 与附件回读的资源可登记。每个正则版本在 `regex` 中占一条记录，`variants` 仅登记该版本已发行并验收的变体。
 
 | 字段 | 含义 |
 | --- | --- |
@@ -36,6 +36,6 @@
 
 7.7 的变体 `standard` 使用「咩咩预设-专用正则-ver7.7」，`large-font` 使用「咩咩预设-专用正则-ver7.7-大字体版(PC端推荐)」。登记时以实际公开 Release 和附件数据为准。
 
-预设与正则可多对多匹配。兼容关系未知的正则可出现在独立下载列表，按预设筛选时仅展示已有兼容依据的变体。
+预设与正则可多对多匹配。不同变体的宿主和预设兼容性以各自的实际验收结果为准。兼容关系未知的正则可出现在独立下载列表，按预设筛选时仅展示已有兼容依据的变体。
 
 提交索引前，解析实际 JSON，核对资源和变体键唯一、Tag 与 Release 身份匹配、每一条附件引用属于对应 Release、路径存在于 Tag 指向的提交、已登记的大小和 SHA-256 与重新下载的字节一致。最终通过 SSH 提交并推送索引，复核公开索引、Tag、Release 和附件的一致性。

@@ -34,9 +34,9 @@ The preset and its companion regex both belong to MieMiePreset. Each has its own
 | 预设本体 / Preset | `miemie.preset` | `X.X.X` | `miemie-preset-v6.2.0` | `MieMiePreset 6.2.0` | `MieMiePreset-ver6.2.0.json` |
 | 专用配套正则 / Preset Regex | `miemie.preset.regex` | `X.X` | `miemie-preset-regex-v7.7` | `MieMiePreset Regex 7.7` | `MieMiePreset-Regex-ver7.7.json` |
 
-同版本的标准版和大字体版共用 Tag 与 Release。大字体版文件名在版本后加 `-LargeFont`。下载列表中的中文名称以索引里的 `variants[].name` 为准。
+同一正则版本可包含标准版及不同适配变体。所有经 Owner 批准并实际发行的同版本变体，共用资源 ID、版本号、Git Tag、Release 和发行说明，各自作为独立 JSON 附件发布。标准版文件名不添加变体后缀；大字体版使用 `-LargeFont`；非 SillyTavern 版使用 `-NonSillyTavern`。其他变体的名称和后缀须经 Owner 确认。下载列表中的完整中文展示名称以 `catalog.json` 中对应变体的 `variants[].name` 为准，不得根据英文文件名或 Release Title 自动生成。
 
-Standard and LargeFont variants of the same version share a tag and release. The LargeFont filename adds `-LargeFont` after the version. Download lists use the Chinese names recorded in `variants[].name`.
+A regex version may include the standard variant and additional compatibility variants. All Owner-approved variants actually published under the same version share one resource ID, version number, Git tag, GitHub release, and release notes. Each variant is distributed as a separate JSON asset. The standard variant has no filename suffix; the large-font variant uses `-LargeFont`, and the non-SillyTavern variant uses `-NonSillyTavern`. Additional variant names and suffixes require Owner approval. Download lists must use the exact Chinese display name recorded in the corresponding `variants[].name` entry in `catalog.json`, rather than deriving it from filenames or release titles.
 
 ## 在线分发计划 / Planned online distribution
 

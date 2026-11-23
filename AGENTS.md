@@ -5,9 +5,9 @@
 - MieMiePreset（咩咩预设）是主体作品。预设本体与其专用配套正则分别使用资源 ID `miemie.preset` 和 `miemie.preset.regex`。配套正则不设独立产品身份。
 - `presets/ver<version>/` 保存该版本的正式预设，`regex/ver<version>/` 保存该版本的配套正则。目录和正式 JSON 文件使用 `ver` 前缀，Git Tag 使用 `v` 前缀。Release Title 使用英文产品名和裸版本号。两类资源独立版本化，分别核验各自版本及兼容关系。预设升级不要求正则同步升版。
 - 预设版本使用 `X.X.X`，Tag 为 `miemie-preset-v<version>`，英文标题为 `MieMiePreset <version>`，正式文件名为 `MieMiePreset-ver<version>.json`。
-- 正则版本使用 `X.X`，Tag 为 `miemie-preset-regex-v<version>`，英文标题为 `MieMiePreset Regex <version>`。标准版与大字体版使用 `MieMiePreset-Regex-ver<version>.json` 和 `MieMiePreset-Regex-ver<version>-LargeFont.json`。特殊变体在版本号后追加 PascalCase 后缀，标准版沿用无后缀文件名。正则修复按两段式版本递增。
-- 同一个正则版本可包含多个变体，统一放在 `regex/ver<version>/`，共用资源 ID、版本、Tag、Release 和发行说明。各变体有独立的变体 ID、文件、字节大小和 SHA-256。入库文件与原件逐字节一致。
-- 正则版本与预设版本可多对多兼容。仅登记已确认的预设资源 ID 和版本，两种变体共用兼容记录时在正则版本上登记，存在差异时记录适用变体。修复旧版正则或升版时，按实际核验结果记录兼容性。
+- 正则版本使用 `X.X`，Tag 为 `miemie-preset-regex-v<version>`，英文标题为 `MieMiePreset Regex <version>`。标准版使用无后缀的 `MieMiePreset-Regex-ver<version>.json`。其他变体在版本号后追加 PascalCase 后缀，大字体版使用 `-LargeFont`，非 SillyTavern 版使用 `-NonSillyTavern`，其余后缀由 Owner 确认。正则修复按两段式版本递增。
+- 同一个正则版本可包含多个变体，具体变体以 Owner 批准且实际发行的文件为准。统一放在 `regex/ver<version>/`，共用资源 ID、版本、Tag、Release 和发行说明。各变体有独立的变体 ID、中文展示名、文件、字节大小、SHA-256 和 Asset 身份。入库文件与原件逐字节一致。
+- 正则版本与预设版本可多对多兼容。仅登记已确认的预设资源 ID 和版本。经核验适用于该版本全部已发行变体的兼容关系在正则版本上登记，存在差异时记录适用变体。各变体的宿主兼容性以实际验收结果为准。修复旧版正则或升版时，按实际核验结果记录兼容性。
 - 修改正式资源时，保留原始 JSON 数据结构、未知字段和未涉及的内容。按任务范围增量修改，禁止擅自重写或整体格式化。
 - 公开任何预设、正则或历史文件前，必须取得 Owner 对该文件和版本的明确批准。草稿、备份、未获批准的历史文件及测试材料不得纳入公开提交或发布附件。
 
