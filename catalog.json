@@ -36,6 +36,41 @@
           }
         }
       ]
+    },
+    {
+      "id": "miemie.preset.regex",
+      "version": "8.0",
+      "release": {
+        "id": 456393444,
+        "tag": "miemie-preset-regex-v8.0",
+        "url": "https://github.com/SheepSheepLab/MieMie-Presets/releases/tag/miemie-preset-regex-v8.0"
+      },
+      "variants": [
+        {
+          "id": "standard",
+          "name": "咩咩预设-专用正则-ver8.0",
+          "path": "regex/ver8.0/MieMiePreset-Regex-ver8.0.json",
+          "size": 473521,
+          "sha256": "7c939edb95c08127037cbc79bd4ec67f8fe99632af8e63fd9c4a929cf228caf5",
+          "asset": {
+            "id": 786031993,
+            "name": "MieMiePreset-Regex-ver8.0.json",
+            "downloadUrl": "https://github.com/SheepSheepLab/MieMie-Presets/releases/download/miemie-preset-regex-v8.0/MieMiePreset-Regex-ver8.0.json"
+          }
+        },
+        {
+          "id": "non-sillytavern",
+          "name": "咩咩预设-专用正则-ver8.0-非SillyTavern",
+          "path": "regex/ver8.0/MieMiePreset-Regex-ver8.0-NonSillyTavern.json",
+          "size": 382539,
+          "sha256": "d50281cb8d9702e361b499da1a3109cd63e6adb0192a038c2a4fd4b6d24e1dfd",
+          "asset": {
+            "id": 786031986,
+            "name": "MieMiePreset-Regex-ver8.0-NonSillyTavern.json",
+            "downloadUrl": "https://github.com/SheepSheepLab/MieMie-Presets/releases/download/miemie-preset-regex-v8.0/MieMiePreset-Regex-ver8.0-NonSillyTavern.json"
+          }
+        }
+      ]
     }
   ]
 }
