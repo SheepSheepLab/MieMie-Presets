@@ -4,6 +4,10 @@
 
 This is the official repository for MieMiePreset and its companion regex resources for SillyTavern. The first companion regex release, [MieMiePreset Regex 7.7](https://github.com/SheepSheepLab/MieMie-Presets/releases/tag/miemie-preset-regex-v7.7), is available in Standard and LargeFont variants. Preset releases are pending.
 
+现已发行 [MieMiePreset Regex 8.0](https://github.com/SheepSheepLab/MieMie-Presets/releases/tag/miemie-preset-regex-v8.0)，提供标准版和非 SillyTavern 版。
+
+[MieMiePreset Regex 8.0](https://github.com/SheepSheepLab/MieMie-Presets/releases/tag/miemie-preset-regex-v8.0) is available in Standard and NonSillyTavern variants.
+
 | 项目身份 / Project identity | |
 | --- | --- |
 | 创始人及作者 / Founder and author | SheepSheep |
