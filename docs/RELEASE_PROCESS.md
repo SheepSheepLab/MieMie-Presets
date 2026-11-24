@@ -15,9 +15,11 @@
 
 | 资源 | Resource ID | 版本 | Git Tag | Release Title | 正式文件名 |
 | --- | --- | --- | --- | --- | --- |
-| 预设本体 | `miemie.preset` | `X.X.X` | `miemie-preset-v<version>` | `MieMiePreset <version>` | `MieMiePreset-ver<version>.json` |
+| 预设本体 | `miemie.preset` | CalVer `YYYY.N.P` | `miemie-preset-v<version>` | `MieMiePreset <version>` | `MieMiePreset-ver<version>.json` |
 | 配套正则 | `miemie.preset.regex` | `X.X` | `miemie-preset-regex-v<version>` | `MieMiePreset Regex <version>` | `MieMiePreset-Regex-ver<version>.json`、`MieMiePreset-Regex-ver<version>-LargeFont.json`、`MieMiePreset-Regex-ver<version>-NonSillyTavern.json` |
 
+- 预设 CalVer 的 `YYYY` 仅表示实际发行的四位年份。功能增量按实际改动说明，兼容性依据实际验收。`N` 是年度迭代编号，与月份无关。`P` 是当前迭代的修订编号。`N` 和 `P` 均为无前导零的非负整数，由 Owner 根据开发、测试与发行进度决定，年度首发编号和发版频率也由 Owner 按需要安排。
+- `2027.1.0` 是当前首个 GitHub 稳定预设版本的目标。`2027.0.1` 或 `2027.0.2` 可以用于先行测试，具体版本、顺序和 GitHub `Pre-release` 状态以 Owner 的发行决定为准。根据实际获批版本生成路径、文件名、Tag 与 Release Title，例如 `presets/ver2027.0.1/MieMiePreset-ver2027.0.1.json`、`miemie-preset-v2027.0.1` 和 `MieMiePreset 2027.0.1`。
 - 正式预设保存于 `presets/ver<version>/`，配套正则放在 `regex/ver<version>/`。正则特殊变体在版本号后追加 PascalCase 后缀，标准版沿用无后缀文件名。除表中列出的后缀外，其他变体的名称和后缀由 Owner 确认。经批准发行的同版本正则变体共用资源 ID、版本、Tag、Release 和发行说明，各自记录附件。7.7 实际发行标准版和大字体版两个变体，使用 `miemie-preset-regex-v7.7`、`MieMiePreset Regex 7.7`。
 - 获批准后，以经过验证的 Tag 建立草稿 Release，通过已授权的 GitHub 界面或 API 上传正式附件。核对标题、发行文案和该版本全部经批准的附件，逐一检查实际名称、ID、字节大小、下载地址及 SHA-256。必要时在草稿阶段经授权下载复核。若 GitHub 规范化名称且影响下载契约，停止并交 Owner 确认。
   - 含保留美术的发行须在 Release Notes 提供有效的素材政策链接，优先指向该版本固定 Tag 或 Commit 中的 `ASSETS-LICENSE.md`。核对链接和登记与该版本实际含图文件一致，保留历史发行说明及其适用的授权记录。
@@ -39,5 +41,7 @@
 7.7 的变体 `standard` 使用「咩咩预设-专用正则-ver7.7」，`large-font` 使用「咩咩预设-专用正则-ver7.7-大字体版(PC端推荐)」。登记时以实际公开 Release 和附件数据为准。
 
 预设与正则可多对多匹配。不同变体的宿主和预设兼容性以各自的实际验收结果为准。兼容关系未知的正则可出现在独立下载列表，按预设筛选时仅展示已有兼容依据的变体。
+
+测试预设是否在在线下载列表显示、是否推荐更新，由 Owner 结合客户端实际支持能力确认。稳定版推荐依据已核实的发行状态，GitHub 标为 `Pre-release` 的版本按测试版处理。
 
 提交索引前，解析实际 JSON，核对资源和变体键唯一、Tag 与 Release 身份匹配、每一条附件引用属于对应 Release、路径存在于 Tag 指向的提交、已登记的大小和 SHA-256 与重新下载的字节一致。最终通过 SSH 提交并推送索引，复核公开索引、Tag、Release 和附件的一致性。

@@ -35,8 +35,12 @@ The preset and its companion regex both belong to MieMiePreset. Each has its own
 
 | 资源 / Resource | Resource ID | 版本 / Version | Git Tag 示例 / Example | Release Title 示例 / Example | 文件名示例 / Example filename |
 | --- | --- | --- | --- | --- | --- |
-| 预设本体 / Preset | `miemie.preset` | `X.X.X` | `miemie-preset-v6.2.0` | `MieMiePreset 6.2.0` | `MieMiePreset-ver6.2.0.json` |
+| 预设本体 / Preset | `miemie.preset` | CalVer `YYYY.N.P` | `miemie-preset-v2027.1.0` | `MieMiePreset 2027.1.0` | `MieMiePreset-ver2027.1.0.json` |
 | 专用配套正则 / Preset Regex | `miemie.preset.regex` | `X.X` | `miemie-preset-regex-v7.7` | `MieMiePreset Regex 7.7` | `MieMiePreset-Regex-ver7.7.json` |
+
+从 2027 年起，预设本体使用 CalVer `YYYY.N.P`，配套正则继续独立使用两段式 `X.X`。`2027.1.0` 是当前计划的首个 GitHub 稳定预设版本，对应路径为 `presets/ver2027.1.0/MieMiePreset-ver2027.1.0.json`。Owner 可按需先发行 `2027.0.1` 等测试版，并决定实际迭代编号与发行状态。
+
+Starting in 2027, presets use CalVer `YYYY.N.P`, and companion regex resources continue to use independent two-part `X.X` versions. The current target for the first stable GitHub preset release is `2027.1.0`, at `presets/ver2027.1.0/MieMiePreset-ver2027.1.0.json`. The owner decides the iteration numbers and release status and may publish test versions such as `2027.0.1` first.
 
 同一正则版本可包含标准版及不同适配变体。所有经 Owner 批准并实际发行的同版本变体，共用资源 ID、版本号、Git Tag、Release 和发行说明，各自作为独立 JSON 附件发布。标准版文件名不添加变体后缀；大字体版使用 `-LargeFont`；非 SillyTavern 版使用 `-NonSillyTavern`。其他变体的名称和后缀须经 Owner 确认。下载列表中的完整中文展示名称以 `catalog.json` 中对应变体的 `variants[].name` 为准，不得根据英文文件名或 Release Title 自动生成。
 
