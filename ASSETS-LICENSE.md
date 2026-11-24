@@ -22,6 +22,15 @@ SheepSheep 是创始人及产品作者，SheepSheepLab 是官方开发、维护�
 - 资源版本及实际包含素材的文件路径。内嵌素材注明 JSON 条目、字段或其他可验证位置。同一美术在多个变体中出现时，列明全部对应文件。
 - 可独立核验的图片格式、尺寸和原始图片字节 SHA-256。只有内嵌副本可核验时，明确记录哈希对应解码后的副本。尚无证据的字段标为待核实。
 
+### 咩咩读书插图
+
+- **来源**　SheepSheep 提供并确认为咩咩官方角色插图。使用 ChatGPT / OpenAI 图像生成功能制作。
+- **资源版本**　`miemie.preset.regex` `8.0`，标准版与非 SillyTavern 版共用。
+- **包含文件**　[`regex/ver8.0/MieMiePreset-Regex-ver8.0.json`](regex/ver8.0/MieMiePreset-Regex-ver8.0.json) 和 [`regex/ver8.0/MieMiePreset-Regex-ver8.0-NonSillyTavern.json`](regex/ver8.0/MieMiePreset-Regex-ver8.0-NonSillyTavern.json)。
+- **内嵌位置**　每份 JSON 的「开场白美化」条目，在 `replaceString` 中以 WebP Data URI 保存。
+- **图片核验**　两份文件内嵌相同的 416 × 278 WebP，解码后均为 25,530 字节。该内嵌副本的 SHA-256 为 `b96b854869911b25c7865d36e59d1571f51d8a37422977071f3824f8de90e78b`。
+- **素材授权**　适用本文件的 Reserved Assets 条款，随上述完整官方 JSON 分发。
+
 ## 默认素材使用权限
 
 - 可以正常下载、导入、使用和运行官方预设与正则，在原有使用场景中显示保留素材，并为个人使用保存或备份官方原始文件。
