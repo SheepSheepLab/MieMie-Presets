@@ -67,10 +67,14 @@ The planned [MieMie Preset Manager](https://github.com/SheepSheepLab/MieMie-Pres
 
 在 LN 等支持提及的平台，可选用 @SheepSheep 提示来源。平台提及是自愿做法，署名义务以许可证为准。
 
-咩咩 / MieMie 品牌、Logo、角色形象及其他独立受保护的品牌视觉资产适用各自的授权。可以如实说明作品源自或基于 MieMie Presets，独立 Fork 应清楚标明自己的身份，避免让用户误认为是官方发布。MieMie Hub、MieMie Preset Manager 等项目的软件继续适用各自的许可证。
+咩咩 / MieMie 品牌、Logo、角色形象及其他独立受保护的品牌视觉资产适用各自的授权。本仓库的官方角色及品牌视觉素材采用独立的 [Reserved Assets 授权](ASSETS-LICENSE.md)，嵌入 JSON 的图片仍适用素材授权。用户可以正常使用和免费原样转载含保留素材的完整官方发布文件。二创可以继续使用获 CC 授权的文本、正则与代码。单独复用保留美术，或在改编文件中继续分发该美术，须按素材政策取得对应授权。
+
+可以如实说明作品源自或基于 MieMie Presets，独立 Fork 应清楚标明自己的身份，避免让用户误认为是官方发布。MieMie Hub、MieMie Preset Manager 等项目的软件继续适用各自的许可证。生态品牌身份见 [MieMie Hub 品牌政策](https://github.com/SheepSheepLab/MieMie-Hub/blob/main/BRAND.md)。
 
 SheepSheep is the original author and project initiator. SheepSheepLab is the official GitHub namespace for development, maintenance, and releases. The copyright notice covers SheepSheep's original contributions. Contributors and third-party rightsholders retain their own attribution and rights.
 
 Original preset and regex content that SheepSheep has the rights to license is available under [CC BY-NC-SA 4.0](LICENSE), including covered text, expressions, configuration, and embedded JavaScript, HTML, and CSS. For noncommercial sharing or adaptations, credit the original author, link to the source and license, and indicate changes. If you share an adaptation, use the same license or a compatible license permitted by its terms. You may also credit your own original additions.
 
-The MieMie / 咩咩 brand, logos, character imagery, and independently protected brand assets are governed by their own permissions. Describe the source of your work accurately and identify independent forks as such. Other MieMie software projects retain their respective licenses.
+The MieMie / 咩咩 brand, logos, character imagery, and independently protected brand assets are governed by their own permissions. Official character art and brand visuals in this repository follow the separate [Reserved Assets policy](ASSETS-LICENSE.md). These terms also apply to art embedded in JSON. You may use complete official release files as intended and redistribute them unmodified and free of charge under the asset terms. You may adapt the CC-licensed text, regex, and code under their license. Standalone reuse of reserved art and redistribution of that art in modified files require separate permission under the asset policy.
+
+Describe the source of your work accurately and identify independent forks as such. Other MieMie software projects retain their respective licenses. See the [MieMie Hub brand policy](https://github.com/SheepSheepLab/MieMie-Hub/blob/main/BRAND.md) for ecosystem brand identity.

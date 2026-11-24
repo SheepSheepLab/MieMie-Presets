@@ -6,6 +6,7 @@
 
 1. 读取当前文档、Git 工作区、远端分支、Tag、Release 和索引。确认正式文件、版本、公开范围及 Owner 最终确认的 Release Notes。Release Notes 直接写入 GitHub Release，`EVOLUTION.md` 继续保留给预设演化史。
 2. 核验原件来源、第三方署名及许可，检查隐私、凭据与内嵌代码。静态检查不运行原件。JSON 必须可解析，正式文件与 Owner 批准的原件逐字节一致，记录各自的大小和 SHA-256。来源、授权或安全问题未解决时，停止发布。
+   - 核对各变体是否含官方角色美术或其他图片，包括 Base64、Data URI 及 HTML、CSS 引用。逐项核实来源、Owner 指定和可分发的授权范围，确认 [ASSETS-LICENSE.md](../ASSETS-LICENSE.md) 的登记涵盖全部实际发行文件。检查内容和保留美术各自的授权说明可访问，按实际范围说明含图 JSON 的许可。
 3. 以明确路径准备暂存区，核对全部文件、物件和待推送历史。检查有效 Author / Committer、SSH 签名和 GitHub SSH 认证，核对实际推送地址。所有检查通过后，签名提交，通过 SSH 推送并回读提交 SHA、文件白名单和 GitHub Verified。
 
 ## 版本、Tag 和附件
@@ -19,6 +20,7 @@
 
 - 正式预设保存于 `presets/ver<version>/`，配套正则放在 `regex/ver<version>/`。正则特殊变体在版本号后追加 PascalCase 后缀，标准版沿用无后缀文件名。除表中列出的后缀外，其他变体的名称和后缀由 Owner 确认。经批准发行的同版本正则变体共用资源 ID、版本、Tag、Release 和发行说明，各自记录附件。7.7 实际发行标准版和大字体版两个变体，使用 `miemie-preset-regex-v7.7`、`MieMiePreset Regex 7.7`。
 - 获批准后，以经过验证的 Tag 建立草稿 Release，通过已授权的 GitHub 界面或 API 上传正式附件。核对标题、发行文案和该版本全部经批准的附件，逐一检查实际名称、ID、字节大小、下载地址及 SHA-256。必要时在草稿阶段经授权下载复核。若 GitHub 规范化名称且影响下载契约，停止并交 Owner 确认。
+  - 含保留美术的发行须在 Release Notes 提供有效的素材政策链接，优先指向该版本固定 Tag 或 Commit 中的 `ASSETS-LICENSE.md`。核对链接和登记与该版本实际含图文件一致，保留历史发行说明及其适用的授权记录。
 - 草稿通过核验后公开 Release。随后匿名重新下载所有已发行变体的附件，逐一核对字节数和 SHA-256，并验证与原件逐字节一致。仓库分支上的文件从推送时起即公开，独立报告其状态。正式发布后不静默替换附件。
 
 ## 公开资源索引
