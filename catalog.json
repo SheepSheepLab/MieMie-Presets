@@ -1,6 +1,30 @@
 {
   "schemaVersion": 1,
-  "presets": [],
+  "presets": [
+    {
+      "id": "miemie.preset",
+      "version": "2027.1.0",
+      "release": {
+        "id": 459552162,
+        "tag": "miemie-preset-v2027.1.0",
+        "url": "https://github.com/SheepSheepLab/MieMie-Presets/releases/tag/miemie-preset-v2027.1.0"
+      },
+      "variants": [
+        {
+          "id": "standard",
+          "name": "咩咩预设-ver2027.1.0",
+          "path": "presets/ver2027.1.0/MieMiePreset-ver2027.1.0.json",
+          "size": 175365,
+          "sha256": "0b60a4f949666a9fcc99d8e278610b47328706514a1ca409c76d042de04906d7",
+          "asset": {
+            "id": 796374455,
+            "name": "MieMiePreset-ver2027.1.0.json",
+            "downloadUrl": "https://github.com/SheepSheepLab/MieMie-Presets/releases/download/miemie-preset-v2027.1.0/MieMiePreset-ver2027.1.0.json"
+          }
+        }
+      ]
+    }
+  ],
   "regex": [
     {
       "id": "miemie.preset.regex",

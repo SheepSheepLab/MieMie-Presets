@@ -1,8 +1,8 @@
 # MieMiePreset / 咩咩预设
 
-这里托管面向 SillyTavern 的咩咩预设（MieMiePreset）及其专用配套正则，用于版本发布和在线分发。首个配套正则版本 [MieMiePreset Regex 7.7](https://github.com/SheepSheepLab/MieMie-Presets/releases/tag/miemie-preset-regex-v7.7) 已发布，提供标准版和大字体版。目前暂无正式预设。
+这里托管面向 SillyTavern 的咩咩预设（MieMiePreset）及其专用配套正则，用于版本发布和在线分发。首个配套正则版本 [MieMiePreset Regex 7.7](https://github.com/SheepSheepLab/MieMie-Presets/releases/tag/miemie-preset-regex-v7.7) 已发布，提供标准版和大字体版。首个正式预设版本 [MieMiePreset 2027.1.0](https://github.com/SheepSheepLab/MieMie-Presets/releases/tag/miemie-preset-v2027.1.0) 已发布。
 
-This is the official repository for MieMiePreset and its companion regex resources for SillyTavern. The first companion regex release, [MieMiePreset Regex 7.7](https://github.com/SheepSheepLab/MieMie-Presets/releases/tag/miemie-preset-regex-v7.7), is available in Standard and LargeFont variants. Preset releases are pending.
+This is the official repository for MieMiePreset and its companion regex resources for SillyTavern. The first companion regex release, [MieMiePreset Regex 7.7](https://github.com/SheepSheepLab/MieMie-Presets/releases/tag/miemie-preset-regex-v7.7), is available in Standard and LargeFont variants. The first official preset, [MieMiePreset 2027.1.0](https://github.com/SheepSheepLab/MieMie-Presets/releases/tag/miemie-preset-v2027.1.0), is now available.
 
 现已发行 [MieMiePreset Regex 8.0](https://github.com/SheepSheepLab/MieMie-Presets/releases/tag/miemie-preset-regex-v8.0)，提供标准版和非 SillyTavern 版。
 
